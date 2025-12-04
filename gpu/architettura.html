@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNest - Architettura GPU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="logo">TechNest</a> 
+        <nav class="nav-menu">
+            <div class="dropdown">
+                <button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a>
+                    <a href="tipi.html"><i class="fas fa-gamepad"></i> GPU</a> 
+                    <a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a>
+                    <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+                    <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
+                    <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
+                    <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
+                    <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
+                    <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Software <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a>
+                    <a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a>
+                </div>
+            </div>
+        </nav>
+           
+    </header>
+
+    <nav class="secondary-nav">
+        <a href="tipi.html" class="secondary-nav-item">Tipi</a>
+        <a href="architettura.html" class="secondary-nav-item active">Architettura</a>
+        <a href="frequenza.html" class="secondary-nav-item">Frequenza</a>
+        <a href="memoria.html" class="secondary-nav-item">Memoria</a>
+        <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+    </nav>
+
+    <section class="gpu-hero" style="background-image: url('../img/gpu/GPU.png');">
+        <div class="gpu-hero-content">
+            <h1 class="gpu-hero-title">Architettura</h1>
+            <div class="gpu-hero-subtitle">Il confronto definitivo: Come i giganti del silicio costruiscono la potenza grafica.</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="intro-text">
+            <h2>Le Tre Grandi Filosofie</h2>
+            <p>Ogni produttore ha un approccio unico per trasformare l'elettricità in pixel. NVIDIA punta sull'Intelligenza Artificiale, AMD sull'efficienza modulare e Intel sull'integrazione multimediale.</p>
+        </div>
+
+        <div class="brand-row nvidia-style">
+            <div class="brand-text">
+                <h2 class="brand-title"><i class="fas fa-eye"></i> NVIDIA</h2>
+                <span class="chip-name">Architettura Ada Lovelace</span>
+                <p>NVIDIA utilizza un design <strong>Monolitico</strong> (un unico grande chip). È la leader indiscussa nel Ray Tracing e nell'IA.</p>
+                <ul class="tech-list">
+                    <li><strong>CUDA Cores: </strong> I "muscoli" standard per il rendering tradizionale.</li>
+                    <li><strong>Tensor Cores: </strong> Chip dedicati esclusivamente all'IA, responsabili della magia del <em>DLSS 3</em> (generazione di frame falsi).</li>
+                    <li><strong>RT Cores: </strong> Hardware specifico che calcola fisicamente i rimbalzi della luce per un'illuminazione realistica.</li>
+                </ul>
+            </div>
+            <div class="brand-image">
+                <img src="../img/gpu/nvidia.png" alt="NVIDIA Architecture">
+            </div>
+        </div>
+
+        <div class="brand-row amd-style">
+            <div class="brand-image">
+                <img src="../img/gpu/amd.png" alt="AMD Architecture">
+            </div>
+            <div class="brand-text">
+                <h2 class="brand-title"><i class="fas fa-fire"></i> AMD</h2>
+                <span class="chip-name">Architettura RDNA™ 3</span>
+                <p>AMD ha rivoluzionato il settore introducendo il design a <strong>Chiplet</strong> (simile ai processori Ryzen). Invece di un chip gigante, uniscono diversi chip più piccoli per massimizzare la resa produttiva.</p>
+                <ul class="tech-list">
+                    <li><strong>Chiplet Design:</strong> Separano il core di calcolo (GCD) dalla memoria cache (MCD) per ridurre i costi.</li>
+                    <li><strong>Infinity Cache:</strong> Una memoria ultra-veloce "cuscinetto" che compensa un bus di memoria più stretto.</li>
+                    <li><strong>FSR (FidelityFX):</strong> La risposta open-source al DLSS, che funziona su tutte le schede.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="brand-row intel-style">
+            <div class="brand-text">
+                <h2 class="brand-title"><i class="fas fa-microchip"></i> INTEL</h2>
+                <span class="chip-name">Architettura Xe HPG</span>
+                <p>Il nuovo sfidante. Intel ha creato un'architettura ibrida molto potente nell'elaborazione video, ideale per streamer e creatori di contenuti.</p>
+                <ul class="tech-list">
+                    <li><strong>Xe-cores & XMX:</strong> Motori matriciali dedicati all'IA (XeSS) simili ai Tensor Cores.</li>
+                    <li><strong>Media Engine:</strong> Supporto hardware superiore per la codifica video AV1 (lo standard del futuro per lo streaming).</li>
+                    <li><strong>Deep Link:</strong> Permette alla GPU dedicata di lavorare insieme alla grafica integrata della CPU Intel per rendering più veloci.</li>
+                </ul>
+            </div>
+            <div class="brand-image">
+                <img src="../img/gpu/intelarc.png" alt="Intel Architecture">
+            </div>
+        </div>
+    </section>
+
+    <section class="related-section">
+        <h3>Componenti Correlati</h3>
+        <div class="related-grid">
+            <a href="../cpu/tipi.html" class="related-item"><i class="fas fa-microchip"></i> CPU</a>
+            <a href="../ram/tipi.html" class="related-item"><i class="fas fa-memory"></i> RAM</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col branding">
+                <a href="../index.html" class="footer-logo">TechNest</a>
+                <p class="copyright">Copyright © 2025</p>
+                <p class="institution">Accademia di Belle Arti<br>di Catania</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contatti</h4>
+                <div class="contact-person">
+                    <strong>Alessio Pertoldi</strong>
+                    <a href="mailto:alessiopertoldi@abacatania.it">alessiopertoldi@abacatania.it</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>&nbsp;</h4>
+                <div class="contact-person">
+                    <strong>Rosario Spina</strong>
+                    <a href="mailto:rosariomariacristianspina@abacatania.it">rosariomariacristianspina@abacatania.it</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const dropbtns = document.querySelectorAll('.dropbtn');
+        dropbtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const dropdownContent = this.nextElementSibling;
+                document.querySelectorAll('.dropdown-content').forEach(content => { if (content !== dropdownContent) content.classList.remove('show'); });
+                document.querySelectorAll('.dropbtn').forEach(b => { if (b !== this) b.classList.remove('active'); });
+                dropdownContent.classList.toggle('show');
+                this.classList.toggle('active');
+            });
+        });
+        window.addEventListener('click', function() {
+            document.querySelectorAll('.dropdown-content').forEach(content => { content.classList.remove('show'); });
+            document.querySelectorAll('.dropbtn').forEach(btn => { btn.classList.remove('active'); });
+        });
+    </script>
+</body>
+</html>

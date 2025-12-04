@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNest - Tipi di RAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="logo">TechNest</a> 
+        <nav class="nav-menu">
+            <div class="dropdown">
+                <button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a>
+                    <a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a> 
+                    <a href="tipi.html"><i class="fas fa-memory"></i> RAM</a>
+                    <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+                    <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
+                    <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
+                    <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
+                    <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
+                    <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Software <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a>
+                    <a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a>
+                </div>
+            </div>
+        </nav>
+           
+    </header>
+
+    <nav class="secondary-nav">
+        <a href="tipi.html" class="secondary-nav-item active">Tipi</a>
+        <a href="capacita.html" class="secondary-nav-item">Capacità</a>
+        <a href="frequenza.html" class="secondary-nav-item">Frequenza</a>
+        <a href="memoria.html" class="secondary-nav-item">Memoria</a>
+        <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+    </nav>
+
+    <section class="gpu-hero" style="background-image: url('../img/ram/hero.jpg');">
+        <div class="gpu-hero-content">
+            <h1 class="gpu-hero-title">Tipi di RAM</h1>
+            <div class="gpu-hero-subtitle">DDR4 vs DDR5 e memorie speciali. L'evoluzione della velocità.</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="intro-text">
+            <h2>Standard Tecnologici</h2>
+            <p>La RAM non è universale: ogni generazione ha una "chiave" fisica diversa e non è retrocompatibile. La scelta dipende esclusivamente da cosa supporta la tua <a href="../cpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">CPU</a> e la tua <a href="../motherboard/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Scheda Madre</a>.</p>
+        </div>
+
+        <div class="types-grid">
+            
+            <div class="type-row integrated">
+                <div class="type-image"><img src="../img/ram/ddr.png" alt="DDR RAM"></div>
+                <div class="type-info">
+                    <h3>DDR SDRAM (Desktop & Laptop)</h3>
+                    <p>Double Data Rate. È lo standard de facto. Attualmente siamo in una fase di transizione tra la quarta e la quinta generazione.</p>
+                    <ul class="type-list">
+                        <li><strong>DDR4:</strong> Ancora validissima per budget build. Frequenze tipiche tra 3200-3600 MHz.</li>
+                        <li><strong>DDR5:</strong> Il nuovo standard. Porta la gestione energetica (PMIC) direttamente sul banco, frequenze oltre i 7000 MHz e correzione errori (ECC) on-die integrata.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="type-row dedicated">
+                <div class="type-image"><img src="../img/ram/lpddr.png" alt="LPDDR Chip"></div>
+                <div class="type-info">
+                    <h3>LPDDR (Low Power)</h3>
+                    <p>Variante a basso voltaggio per dispositivi mobili, tablet e ultrabook moderni (come i MacBook o i laptop Intel Evo). Sacrifica la modularità per l'efficienza.</p>
+                    <ul class="type-list">
+                        <li><strong>Saldatura:</strong> I chip sono saldati sulla scheda madre per ridurre le distanze e il consumo. <strong>Non aggiornabile</strong>.</li>
+                        <li><strong>Efficienza:</strong> In standby consuma una frazione rispetto alla DDR standard.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="type-row integrated">
+                <div class="type-image"><img src="../img/ram/hbm.png" alt="HBM Stack"></div>
+                <div class="type-info">
+                    <h3>HBM (High Bandwidth Memory)</h3>
+                    <p>Una tecnologia esotica dove i chip di memoria sono impilati verticalmente (3D Stacking) e posizionati vicinissimi al processore su un "interposer" di silicio.</p>
+                    <ul class="type-list">
+                        <li><strong>Velocità Folle:</strong> Bus ultra-largo (1024-bit o più) che permette un passaggio dati massiccio.</li>
+                        <li><strong>Uso:</strong> Esclusivo di <a href="../gpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">GPU</a> professionali/AI e Server. Troppo costosa per i PC domestici.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col branding"><a href="../index.html" class="footer-logo">TechNest</a><p class="copyright">Copyright © 2025</p><p class="institution">Accademia di Belle Arti<br>di Catania</p></div>
+            <div class="footer-col"><h4>Contatti</h4><div class="contact-person"><strong>Alessio Pertoldi</strong><a href="mailto:alessiopertoldi@abacatania.it">alessiopertoldi@abacatania.it</a></div></div>
+            <div class="footer-col"><h4>&nbsp;</h4><div class="contact-person"><strong>Rosario Spina</strong><a href="mailto:rosariomariacristianspina@abacatania.it">rosariomariacristianspina@abacatania.it</a></div></div>
+        </div>
+    </footer>
+    <script>const dropbtns=document.querySelectorAll('.dropbtn');dropbtns.forEach(btn=>{btn.addEventListener('click',function(e){e.stopPropagation();const dropdownContent=this.nextElementSibling;document.querySelectorAll('.dropdown-content').forEach(content=>{if(content!==dropdownContent)content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(b=>{if(b!==this)b.classList.remove('active');});dropdownContent.classList.toggle('show');this.classList.toggle('active');});});window.addEventListener('click',function(){document.querySelectorAll('.dropdown-content').forEach(content=>{content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(btn=>{btn.classList.remove('active');});});</script>
+</body>
+</html>

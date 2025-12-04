@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNest - Struttura PSU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">TechNest</a> 
+        <nav class="nav-menu">
+            <div class="dropdown">
+                <button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a>
+                    <a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a> 
+                    <a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a>
+                    <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+                    <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
+                    <a href="tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
+                    <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
+                    <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
+                    <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Software <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a>
+                    <a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="secondary-nav">
+        <a href="tipi.html" class="secondary-nav-item">Tipi (Cavi)</a>
+        <a href="architettura.html" class="secondary-nav-item active">Struttura</a>
+        <a href="potenza.html" class="secondary-nav-item">Potenza</a>
+        <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+    </nav>
+
+    <section class="gpu-hero" style="background-image: url('../img/psu/hero.jpg');">
+        <div class="gpu-hero-content">
+            <h1 class="gpu-hero-title">Qualità Costruttiva</h1>
+            <div class="gpu-hero-subtitle">Non risparmiare mai sull'alimentatore. Ecco perché.</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="intro-text">
+            <h2>Componenti Interni</h2>
+            <p>Un alimentatore scadente ("cinesata") può esplodere e bruciare l'intero PC. La qualità si vede dai componenti interni come i condensatori e dalle ventole.</p>
+        </div>
+
+        <div class="types-grid">
+            <div class="type-row integrated">
+                <div class="type-image"><img src="../img/psu/internal.png" alt="PSU Capacitors"></div>
+                <div class="type-info">
+                    <h3>Condensatori Giapponesi</h3>
+                    <p>Gli alimentatori di fascia alta usano condensatori primari (spesso giapponesi) resistenti ad alte temperature (105°C). Questo garantisce che la corrente arrivi pulita e stabile alla <a href="../motherboard/tipi.html" style="color: var(--accent-purple);">Scheda Madre</a>.</p>
+                </div>
+            </div>
+
+            <div class="type-row dedicated">
+                <div class="type-image"><img src="../img/psu/fan.png" alt="Hybrid Fan"></div>
+                <div class="type-info">
+                    <h3>Modalità Ibrida (Zero RPM)</h3>
+                    <p>Molti PSU moderni di qualità fermano completamente la ventola quando il PC è a riposo o stai solo navigando.</p>
+                    <p>Il risultato è il <strong>silenzio assoluto</strong>. La ventola parte solo quando inizi a giocare e il sistema richiede potenza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-section">
+        <h3>Componenti Correlati</h3>
+        <div class="related-grid">
+            <a href="../cooling/tipi.html" class="related-item"><i class="fas fa-fan"></i> Dissipazione</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col branding"><a href="../index.html" class="footer-logo">TechNest</a><p class="copyright">Copyright © 2025</p><p class="institution">Accademia di Belle Arti<br>di Catania</p></div>
+            <div class="footer-col"><h4>Contatti</h4><div class="contact-person"><strong>Alessio Pertoldi</strong><a href="mailto:alessiopertoldi@abacatania.it">alessiopertoldi@abacatania.it</a></div></div>
+            <div class="footer-col"><h4>&nbsp;</h4><div class="contact-person"><strong>Rosario Spina</strong><a href="mailto:rosariomariacristianspina@abacatania.it">rosariomariacristianspina@abacatania.it</a></div></div>
+        </div>
+    </footer>
+    <script>const dropbtns=document.querySelectorAll('.dropbtn');dropbtns.forEach(btn=>{btn.addEventListener('click',function(e){e.stopPropagation();const dropdownContent=this.nextElementSibling;document.querySelectorAll('.dropdown-content').forEach(content=>{if(content!==dropdownContent)content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(b=>{if(b!==this)b.classList.remove('active');});dropdownContent.classList.toggle('show');this.classList.toggle('active');});});window.addEventListener('click',function(){document.querySelectorAll('.dropdown-content').forEach(content=>{content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(btn=>{btn.classList.remove('active');});});</script>
+</body>
+</html>

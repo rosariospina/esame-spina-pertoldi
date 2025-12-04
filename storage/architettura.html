@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNest - Architettura Storage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">TechNest</a> 
+        <nav class="nav-menu">
+            <div class="dropdown">
+                <button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a>
+                    <a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a> 
+                    <a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a>
+                    <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+                    <a href="tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
+                    <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
+                    <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
+                    <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
+                    <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Software <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a>
+                    <a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="secondary-nav">
+        <a href="tipi.html" class="secondary-nav-item">Tipi</a>
+        <a href="architettura.html" class="secondary-nav-item active">Architettura</a>
+        <a href="frequenza.html" class="secondary-nav-item">Velocità</a>
+        <a href="modelli.html" class="secondary-nav-item">Formati</a>
+    </nav>
+
+    <section class="gpu-hero" style="background-image: url('../img/storage/hero.jpg');">
+        <div class="gpu-hero-content">
+            <h1 class="gpu-hero-title">Meccanico vs Flash</h1>
+            <div class="gpu-hero-subtitle">Cosa succede dentro il drive quando salvi un file?</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="intro-text">
+            <h2>L'evoluzione della scrittura</h2>
+            <p>Siamo passati da testine fisiche che scrivevano magneticamente su piatti rotanti a elettroni intrappolati in celle microscopiche.</p>
+        </div>
+
+        <div class="split-container">
+            <div class="split-side left">
+                <img src="../img/storage/platter.png" alt="HDD Platter">
+                <h2>Magnetico (HDD)</h2>
+                <p>Funziona come un giradischi. Dei piatti ruotano a 7200 giri al minuto mentre una testina legge e scrive i dati.</p>
+                <p>La natura fisica impone limiti di velocità e latenza (la testina deve spostarsi fisicamente per trovare il dato).</p>
+            </div>
+
+            <div class="split-side right">
+                <img src="../img/storage/nand.png" alt="NAND Flash">
+                <h2>Memoria NAND (SSD)</h2>
+                <p>Utilizza celle di memoria Flash che intrappolano cariche elettriche per rappresentare 0 e 1. Nessuna parte in movimento.</p>
+                <p>L'accesso ai dati è istantaneo (microsecondi), rendendo il sistema operativo estremamente reattivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-section">
+        <h3>Componenti Correlati</h3>
+        <div class="related-grid">
+            <a href="../motherboard/tipi.html" class="related-item"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col branding"><a href="../index.html" class="footer-logo">TechNest</a><p class="copyright">Copyright © 2025</p><p class="institution">Accademia di Belle Arti<br>di Catania</p></div>
+            <div class="footer-col"><h4>Contatti</h4><div class="contact-person"><strong>Alessio Pertoldi</strong><a href="mailto:alessiopertoldi@abacatania.it">alessiopertoldi@abacatania.it</a></div></div>
+            <div class="footer-col"><h4>&nbsp;</h4><div class="contact-person"><strong>Rosario Spina</strong><a href="mailto:rosariomariacristianspina@abacatania.it">rosariomariacristianspina@abacatania.it</a></div></div>
+        </div>
+    </footer>
+    <script>const dropbtns=document.querySelectorAll('.dropbtn');dropbtns.forEach(btn=>{btn.addEventListener('click',function(e){e.stopPropagation();const dropdownContent=this.nextElementSibling;document.querySelectorAll('.dropdown-content').forEach(content=>{if(content!==dropdownContent)content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(b=>{if(b!==this)b.classList.remove('active');});dropdownContent.classList.toggle('show');this.classList.toggle('active');});});window.addEventListener('click',function(){document.querySelectorAll('.dropdown-content').forEach(content=>{content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(btn=>{btn.classList.remove('active');});});</script>
+</body>
+</html>

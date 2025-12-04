@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNest - Tipi di CPU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">TechNest</a> 
+        <nav class="nav-menu">
+            <div class="dropdown">
+                <button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="tipi.html"><i class="fas fa-microchip"></i> CPU</a>
+                    <a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a> 
+                    <a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a>
+                    <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+                    <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
+                    <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
+                    <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
+                    <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
+                    <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Software <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a>
+                    <a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a>
+                </div>
+            </div>
+        </nav>
+          
+    </header>
+
+    <nav class="secondary-nav">
+        <a href="tipi.html" class="secondary-nav-item active">Introduzione</a>
+        <a href="architettura.html" class="secondary-nav-item">Architettura</a>
+        <a href="socket.html" class="secondary-nav-item">Socket</a>
+        <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+    </nav>
+
+    <section class="gpu-hero" style="background-image: url('../img/cpu/hero.jpg');">
+        <div class="gpu-hero-content">
+            <h1 class="gpu-hero-title">Processore (CPU)</h1>
+            <div class="gpu-hero-subtitle">Il cervello del computer. Tutto passa da qui.</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="intro-text">
+            <h2>I Due Giganti del Mercato</h2>
+            <p>Non puoi scegliere una CPU a caso. Devi scegliere un "ecosistema". La scelta tra Intel e AMD determinerà quale <a href="../motherboard/tipi.html" style="color: var(--accent-purple);">Scheda Madre</a> e talvolta quale RAM potrai usare.</p>
+        </div>
+
+        <div class="brand-row intel-style">
+            <div class="brand-text">
+                <h2 class="brand-title"><i class="fas fa-microchip"></i> INTEL</h2>
+                <span class="chip-name">Serie Core & Core Ultra</span>
+                <p>Pioniere del settore. Negli ultimi anni ha introdotto l'architettura "ibrida" per bilanciare potenza bruta e consumi.</p>
+                <ul class="tech-list">
+                    <li><strong>Performance Cores (P-Cores):</strong> Muscoli puri per gaming e lavoro pesante.</li>
+                    <li><strong>Efficiency Cores (E-Cores):</strong> Gestiscono background e sistema operativo per risparmiare energia.</li>
+                    <li><strong>Piattaforma:</strong> Eccellente supporto Thunderbolt e stabilità driver.</li>
+                </ul>
+            </div>
+            <div class="brand-image">
+                <img src="../img/cpu/intel.png" alt="Intel CPU">
+            </div>
+        </div>
+
+        <div class="brand-row amd-style">
+            <div class="brand-image">
+                <img src="../img/cpu/amd.png" alt="AMD Ryzen CPU">
+            </div>
+            <div class="brand-text">
+                <h2 class="brand-title"><i class="fas fa-fire"></i> AMD</h2>
+                <span class="chip-name">Serie Ryzen</span>
+                <p>Ha rivoluzionato il mercato con i processori Ryzen, offrendo più core a prezzi minori e un'efficienza incredibile.</p>
+                <ul class="tech-list">
+                    <li><strong>Tecnologia 3D V-Cache:</strong> Memoria impilata sul chip che offre prestazioni mostruose nei giochi (Serie X3D).</li>
+                    <li><strong>Efficienza:</strong> Spesso consumano meno watt dei rivali Intel a parità di potenza.</li>
+                    <li><strong>Longevità:</strong> Tendono a mantenere lo stesso <a href="socket.html" style="color: var(--accent-purple);">Socket</a> per più anni.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-section">
+        <h3>Componenti Correlati</h3>
+        <div class="related-grid">
+            <a href="../motherboard/tipi.html" class="related-item"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+            <a href="../cooling/tipi.html" class="related-item"><i class="fas fa-fan"></i> Dissipazione</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col branding"><a href="../index.html" class="footer-logo">TechNest</a><p class="copyright">Copyright © 2025</p><p class="institution">Accademia di Belle Arti<br>di Catania</p></div>
+            <div class="footer-col"><h4>Contatti</h4><div class="contact-person"><strong>Alessio Pertoldi</strong><a href="mailto:alessiopertoldi@abacatania.it">alessiopertoldi@abacatania.it</a></div></div>
+            <div class="footer-col"><h4>&nbsp;</h4><div class="contact-person"><strong>Rosario Spina</strong><a href="mailto:rosariomariacristianspina@abacatania.it">rosariomariacristianspina@abacatania.it</a></div></div>
+        </div>
+    </footer>
+    <script>const dropbtns=document.querySelectorAll('.dropbtn');dropbtns.forEach(btn=>{btn.addEventListener('click',function(e){e.stopPropagation();const dropdownContent=this.nextElementSibling;document.querySelectorAll('.dropdown-content').forEach(content=>{if(content!==dropdownContent)content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(b=>{if(b!==this)b.classList.remove('active');});dropdownContent.classList.toggle('show');this.classList.toggle('active');});});window.addEventListener('click',function(){document.querySelectorAll('.dropdown-content').forEach(content=>{content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(btn=>{btn.classList.remove('active');});});</script>
+</body>
+</html>

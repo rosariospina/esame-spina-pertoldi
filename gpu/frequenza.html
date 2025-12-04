@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNest - Frequenza GPU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="logo">TechNest</a> 
+        <nav class="nav-menu">
+            <div class="dropdown">
+                <button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a>
+                    <a href="tipi.html"><i class="fas fa-gamepad"></i> GPU</a> 
+                    <a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a>
+                    <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+                    <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
+                    <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
+                    <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
+                    <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
+                    <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Software <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a>
+                    <a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a>
+                </div>
+            </div>
+        </nav>
+           
+    </header>
+
+    <nav class="secondary-nav">
+        <a href="tipi.html" class="secondary-nav-item">Tipi</a>
+        <a href="architettura.html" class="secondary-nav-item">Architettura</a>
+        <a href="frequenza.html" class="secondary-nav-item active">Frequenza</a>
+        <a href="memoria.html" class="secondary-nav-item">Memoria</a>
+        <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+    </nav>
+
+    <section class="gpu-hero" style="background-image: url('../img/gpu/GPU.png');">
+        <div class="gpu-hero-content">
+            <h1 class="gpu-hero-title">Frequenza (Clock)</h1>
+            <div class="gpu-hero-subtitle">MHz, GHz e Boost Clock. Quanto velocemente "batte" il cuore della tua scheda grafica?</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="intro-text">
+            <h2>La Velocità di Elaborazione</h2>
+            <p>La frequenza di clock indica quanti cicli di calcolo la GPU può eseguire al secondo. È un equilibrio delicato: più alta è la frequenza, maggiori sono le prestazioni, ma aumentano drasticamente i consumi e il calore da smaltire tramite il <a href="../cooling/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Dissipatore</a>.</p>
+        </div>
+
+        <div class="cards-container grid-2-cols">
+            
+            <div class="info-card">
+                <img src="../img/gpu/baseclock.png" alt="Base Clock Speed">
+                <h3>Base Clock</h3>
+                <p>È la frequenza minima garantita dal produttore durante carichi di lavoro intensi (come il rendering). La scheda non scenderà mai sotto questo valore a meno che non ci siano problemi termici gravi. È la "velocità di crociera" assicurata in ogni condizione.</p>
+            </div>
+
+            <div class="info-card">
+                <img src="../img/gpu/boostclock.png" alt="Boost Clock Speed">
+                <h3>Boost Clock</h3>
+                <p>È la frequenza target che la GPU cerca di raggiungere automaticamente quando le condizioni lo permettono (bassa temperatura e potenza dall'<a href="../psu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Alimentatore</a> sufficiente). Nei giochi moderni, la scheda oscillerà costantemente attorno a questo valore per massimizzare gli FPS.</p>
+            </div>
+
+            <div class="info-card">
+                <img src="../img/gpu/overclock.png" alt="Overclocking Concept">
+                <h3>Overclocking</h3>
+                <p>La pratica di aumentare manualmente le frequenze di Core e Memoria tramite software dedicati. Permette di ottenere un 5-10% di prestazioni extra gratuitamente, ma richiede un ottimo raffreddamento e può causare instabilità (crash) se spinto oltre i limiti fisici del chip.</p>
+            </div>
+
+            <div class="info-card">
+                <img src="../img/gpu/thermal.png" alt="Thermal Throttling Warning">
+                <h3>Thermal Throttling</h3>
+                <p>Il meccanismo di autodifesa del chip. Se la temperatura tocca livelli critici (solitamente sopra i 90°C), la GPU taglia drasticamente le frequenze per raffreddarsi. Questo causa improvvisi cali di prestazioni (lag) ed è sintomo di un cattivo airflow nel <a href="../case/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Case</a>.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="related-section">
+        <h3>Componenti Correlati</h3>
+        <div class="related-grid">
+            <a href="../cooling/tipi.html" class="related-item"><i class="fas fa-fan"></i> Dissipazione</a>
+            <a href="../psu/tipi.html" class="related-item"><i class="fas fa-plug"></i> Alimentatore</a>
+            <a href="../case/tipi.html" class="related-item"><i class="fas fa-box"></i> Case</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col branding">
+                <a href="../index.html" class="footer-logo">TechNest</a>
+                <p class="copyright">Copyright © 2025</p>
+                <p class="institution">Accademia di Belle Arti<br>di Catania</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contatti</h4>
+                <div class="contact-person">
+                    <strong>Alessio Pertoldi</strong>
+                    <a href="mailto:alessiopertoldi@abacatania.it">alessiopertoldi@abacatania.it</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>&nbsp;</h4>
+                <div class="contact-person">
+                    <strong>Rosario Spina</strong>
+                    <a href="mailto:rosariomariacristianspina@abacatania.it">rosariomariacristianspina@abacatania.it</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const dropbtns = document.querySelectorAll('.dropbtn');
+        dropbtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const dropdownContent = this.nextElementSibling;
+                document.querySelectorAll('.dropdown-content').forEach(content => { if (content !== dropdownContent) content.classList.remove('show'); });
+                document.querySelectorAll('.dropbtn').forEach(b => { if (b !== this) b.classList.remove('active'); });
+                dropdownContent.classList.toggle('show');
+                this.classList.toggle('active');
+            });
+        });
+        window.addEventListener('click', function() {
+            document.querySelectorAll('.dropdown-content').forEach(content => { content.classList.remove('show'); });
+            document.querySelectorAll('.dropbtn').forEach(btn => { btn.classList.remove('active'); });
+        });
+    </script>
+</body>
+</html>

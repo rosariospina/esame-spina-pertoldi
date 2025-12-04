@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>TechNest - Capacità RAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">TechNest</a> 
+        <nav class="nav-menu">
+            <div class="dropdown"><button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button><div class="dropdown-content"><a href="../cpu/tipi.html">CPU</a><a href="../gpu/tipi.html">GPU</a><a href="tipi.html">RAM</a><a href="../motherboard/tipi.html">Mobo</a><a href="../storage/tipi.html">Storage</a><a href="../psu/tipi.html">PSU</a><a href="../case/tipi.html">Case</a></div></div>
+            <div class="dropdown"><button class="dropbtn">Software <i class="fas fa-caret-down"></i></button><div class="dropdown-content"><a href="../os/windows.html">Windows</a></div></div>
+        </nav>
+           
+    </header>
+
+    <nav class="secondary-nav">
+        <a href="tipi.html" class="secondary-nav-item">Tipi</a>
+        <a href="capacita.html" class="secondary-nav-item active">Capacità</a>
+        <a href="frequenza.html" class="secondary-nav-item">Frequenza</a>
+        <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+    </nav>
+
+    <section class="gpu-hero" style="background-image: url('../img/ram/hero.jpg');">
+        <div class="gpu-hero-content">
+            <h1 class="gpu-hero-title">Capacità (GB)</h1>
+            <div class="gpu-hero-subtitle">Quanta memoria serve davvero nel 2025?</div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="intro-text">
+            <h2>Il "Banco di Lavoro"</h2>
+            <p>La RAM è lo spazio dove il computer tiene aperti i programmi in uso. Se è troppo poca, il PC deve usare l'<a href="../storage/tipi.html" style="color: var(--accent-purple);">Archiviazione</a> come memoria di emergenza, rallentando tutto drasticamente.</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-card">
+                <div class="card-header"><h3>8 GB</h3><span>Minimo Essenziale</span></div>
+                <img src="../img/ram/office.png" alt="Office Icon">
+                <p>Sufficiente per navigazione web base (poche schede), pacchetto Office e streaming video. Non adatto per il gaming moderno o per tenere molte app aperte insieme.</p>
+            </div>
+
+            <div class="grid-card recommended">
+                <div class="card-header"><h3>16 GB</h3><span>Standard Ideale</span></div>
+                <img src="../img/ram/gaming.png" alt="Gaming Icon">
+                <p>Il punto d'equilibrio perfetto ("Sweet Spot"). Permette di giocare fluidamente alla maggior parte dei titoli, fare editing leggero e navigare senza pensieri.</p>
+            </div>
+
+            <div class="grid-card">
+                <div class="card-header"><h3>32+ GB</h3><span>Pro & Creator</span></div>
+                <img src="../img/ram/pro.png" alt="Workstation Icon">
+                <p>Necessario per editing video 4K, modellazione 3D, macchine virtuali o simulatori di volo complessi. Per un uso normale è spesso capacità inutilizzata.</p>
+            </div>
+        </div>
+
+        <div class="wide-box">
+            <div class="wide-text">
+                <h2>Dual Channel: 1+1 fa 3</h2>
+                <p>Non conta solo la quantità totale, ma come la installi. Usare due banchi di RAM identici (es. 2x8GB) invece di uno solo (1x16GB) raddoppia la larghezza di banda verso la <a href="../cpu/tipi.html" style="color: var(--accent-purple);">CPU</a>.</p>
+                <p>È come aprire una seconda corsia in autostrada: le prestazioni, specialmente nei giochi, possono aumentare fino al 20%.</p>
+            </div>
+            <div class="wide-img"><img src="../img/ram/dualchannel.png" alt="Dual Channel Illustration"></div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col branding"><a href="../index.html" class="footer-logo">TechNest</a><p class="copyright">Copyright © 2025</p><p class="institution">Accademia di Belle Arti<br>di Catania</p></div>
+            <div class="footer-col"><h4>Contatti</h4><div class="contact-person"><strong>Alessio Pertoldi</strong><a href="mailto:alessiopertoldi@abacatania.it">alessiopertoldi@abacatania.it</a></div></div>
+            <div class="footer-col"><h4>&nbsp;</h4><div class="contact-person"><strong>Rosario Spina</strong><a href="mailto:rosariomariacristianspina@abacatania.it">rosariomariacristianspina@abacatania.it</a></div></div>
+        </div>
+    </footer>
+    <script>const dropbtns=document.querySelectorAll('.dropbtn');dropbtns.forEach(btn=>{btn.addEventListener('click',function(e){e.stopPropagation();const dropdownContent=this.nextElementSibling;document.querySelectorAll('.dropdown-content').forEach(content=>{if(content!==dropdownContent)content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(b=>{if(b!==this)b.classList.remove('active');});dropdownContent.classList.toggle('show');this.classList.toggle('active');});});window.addEventListener('click',function(){document.querySelectorAll('.dropdown-content').forEach(content=>{content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(btn=>{btn.classList.remove('active');});});</script>
+</body>
+</html>
