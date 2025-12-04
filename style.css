@@ -129,7 +129,7 @@ header {
    5. SEZIONI E LAYOUT GENERALE
    ========================================= */
 section { scroll-margin-top: 150px; }
-.content-section { padding: 80px 5%; background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); }
+.content-section { padding: 80px 5%; background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.jpg'); }
 
 .section-title, .intro-text { 
     text-align: center; max-width: 800px; margin: 0 auto 60px auto; 
@@ -164,7 +164,7 @@ a.icon-box:hover i, a.icon-box:hover span { color: #fff; }
 .pc-image-container img { max-width: 100%; height: auto; max-height: 500px; object-fit: contain; filter: drop-shadow(0 0 20px rgba(0,0,0,0.5)); }
 
 /* --- Carosello OS --- */
-.os-section { background-color: #000; background-image: url('img/index/background os.png'); padding: 80px; position: relative; }
+.os-section { background-color: #000; background-image: url('img/index/background os.jpg'); padding: 80px; position: relative; }
 .carousel-container { max-width: 1200px; margin: 0 auto; position: relative; overflow: hidden; padding: 50px; }
 .carousel-track { display: flex; transition: transform 0.5s ease-in-out; width: 100%; }
 .carousel-slide { min-width: 100%; display: flex; align-items: center; justify-content: center; gap: 50px; flex-wrap: wrap-reverse; padding: 20px; box-sizing: border-box; }
