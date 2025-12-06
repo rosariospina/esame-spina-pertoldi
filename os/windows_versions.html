@@ -2,21 +2,21 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>TechNest - Capacità RAM</title>
+    <title>TechNest - Versioni Windows</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <a href="../index.html" class="logo">TechNest</a> 
+        <a href="index.html" class="logo">TechNest</a> 
         <nav class="nav-menu">
             <div class="dropdown">
                 <button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button>
                 <div class="dropdown-content">
                     <a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a>
                     <a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a> 
-                    <a href="tipi.html"><i class="fas fa-memory"></i> RAM</a>
+                    <a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a>
                     <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
                     <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
                     <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
@@ -28,62 +28,50 @@
             <div class="dropdown">
                 <button class="dropbtn">Software <i class="fas fa-caret-down"></i></button>
                 <div class="dropdown-content">
-                    <a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a>
-                    <a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a>
-                    <a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a>
+                    <a href="os/windows.html"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="os/macos.html"><i class="fab fa-apple"></i> macOS</a>
+                    <a href="os/linux.html"><i class="fab fa-linux"></i> Linux</a>
                 </div>
             </div>
         </nav>
-           
+        
     </header>
 
     <nav class="secondary-nav">
-        <a href="tipi.html" class="secondary-nav-item">Tipi</a>
-        <a href="capacita.html" class="secondary-nav-item active">Capacità</a>
-        <a href="frequenza.html" class="secondary-nav-item">Frequenza</a>
-        <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+        <a href="windows.html" class="secondary-nav-item">Panoramica</a>
+        <a href="windows_features.html" class="secondary-nav-item">Perché Sceglierlo</a>
+        <a href="windows_versions.html" class="secondary-nav-item active">Edizioni</a>
     </nav>
 
-    <section class="gpu-hero" style="background-image: url('../img/ram/hero.jpg');">
+    <section class="gpu-hero" style="background-image: url('../img/os/windows_hero.jpg');">
         <div class="gpu-hero-content">
-            <h1 class="gpu-hero-title">Capacità (GB)</h1>
-            <div class="gpu-hero-subtitle">Quanta memoria serve davvero nel 2025?</div>
+            <h1 class="gpu-hero-title">Le Edizioni</h1>
+            <div class="gpu-hero-subtitle">Home o Pro? Cosa ti serve davvero.</div>
         </div>
     </section>
 
     <section class="content-section">
         <div class="intro-text">
-            <h2>Il "Banco di Lavoro"</h2>
-            <p>La RAM è lo spazio dove il computer tiene aperti i programmi in uso. Se è troppo poca, il PC deve usare l'<a href="../storage/tipi.html" style="color: var(--accent-purple);">Archiviazione</a> come memoria di emergenza, rallentando tutto drasticamente.</p>
+            <h2>Windows 11 Home vs Pro</h2>
+            <p>La maggior parte degli utenti domestici non noterà differenze nell'uso quotidiano, ma per i professionisti la versione Pro sblocca funzioni critiche.</p>
         </div>
 
-        <div class="grid-container">
-            <div class="grid-card">
-                <div class="card-header"><h3>8 GB</h3><span>Minimo Essenziale</span></div>
-                <img src="../img/ram/office.jpg" alt="Office Icon">
-                <p>Sufficiente per navigazione web base (poche schede), pacchetto Office e streaming video. Non adatto per il gaming moderno o per tenere molte app aperte insieme.</p>
+        <div class="split-container">
+            
+            <div class="split-side left">
+                <img src="../img/os/win_home.png" alt="Windows 11 Home">
+                <h2>Windows 11 Home</h2>
+                <p>La scelta standard per il 90% delle persone. Include tutto ciò che serve per navigare, guardare film e giocare.</p>
+                <p>Supporta DirectX 12 Ultimate, Game Mode e l'integrazione con Xbox. Perfetto per studenti e famiglie.</p>
             </div>
 
-            <div class="grid-card recommended">
-                <div class="card-header"><h3>16 GB</h3><span>Standard Ideale</span></div>
-                <img src="../img/ram/gaming.jpg" alt="Gaming Icon">
-                <p>Il punto d'equilibrio perfetto ("Sweet Spot"). Permette di giocare fluidamente alla maggior parte dei titoli, fare editing leggero e navigare senza pensieri.</p>
+            <div class="split-side right">
+                <img src="../img/os/win_pro.png" alt="Windows 11 Pro">
+                <h2>Windows 11 Pro</h2>
+                <p>Pensato per il business e gli utenti esperti (Power Users).</p>
+                <p>Sblocca <strong>BitLocker</strong> (crittografia completa del disco per sicurezza), <strong>Remote Desktop</strong> (per controllare il PC da lontano) e la virtualizzazione avanzata (Hyper-V e Sandbox).</p>
             </div>
 
-            <div class="grid-card">
-                <div class="card-header"><h3>32+ GB</h3><span>Pro & Creator</span></div>
-                <img src="../img/ram/pro.jpg" alt="Workstation Icon">
-                <p>Necessario per editing video 4K, modellazione 3D, macchine virtuali o simulatori di volo complessi. Per un uso normale è spesso capacità inutilizzata.</p>
-            </div>
-        </div>
-
-        <div class="wide-box">
-            <div class="wide-text">
-                <h2>Dual Channel: 1+1 fa 3</h2>
-                <p>Non conta solo la quantità totale, ma come la installi. Usare due banchi di RAM identici (es. 2x8GB) invece di uno solo (1x16GB) raddoppia la larghezza di banda verso la <a href="../cpu/tipi.html" style="color: var(--accent-purple);">CPU</a>.</p>
-                <p>È come aprire una seconda corsia in autostrada: le prestazioni, specialmente nei giochi, possono aumentare fino al 20%.</p>
-            </div>
-            <div class="wide-img"><img src="../img/ram/dualchannel.jpg" alt="Dual Channel Illustration"></div>
         </div>
     </section>
 

@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>TechNest - Capacità RAM</title>
+    <title>TechNest - Funzionalità Linux</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
@@ -16,7 +16,7 @@
                 <div class="dropdown-content">
                     <a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a>
                     <a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a> 
-                    <a href="tipi.html"><i class="fas fa-memory"></i> RAM</a>
+                    <a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a>
                     <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
                     <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
                     <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
@@ -28,62 +28,58 @@
             <div class="dropdown">
                 <button class="dropbtn">Software <i class="fas fa-caret-down"></i></button>
                 <div class="dropdown-content">
-                    <a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a>
-                    <a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a>
-                    <a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a>
+                    <a href="windows.html"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="macos.html"><i class="fab fa-apple"></i> macOS</a>
+                    <a href="linux.html"><i class="fab fa-linux"></i> Linux</a>
                 </div>
             </div>
         </nav>
-           
     </header>
 
     <nav class="secondary-nav">
-        <a href="tipi.html" class="secondary-nav-item">Tipi</a>
-        <a href="capacita.html" class="secondary-nav-item active">Capacità</a>
-        <a href="frequenza.html" class="secondary-nav-item">Frequenza</a>
-        <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+        <a href="linux.html" class="secondary-nav-item">Panoramica</a>
+        <a href="linux_features.html" class="secondary-nav-item active">Perché Sceglierlo</a>
+        <a href="linux_versions.html" class="secondary-nav-item">Distro</a>
     </nav>
 
-    <section class="gpu-hero" style="background-image: url('../img/ram/hero.jpg');">
+    <section class="gpu-hero" style="background-image: url('../img/os/linux_hero.jpg');">
         <div class="gpu-hero-content">
-            <h1 class="gpu-hero-title">Capacità (GB)</h1>
-            <div class="gpu-hero-subtitle">Quanta memoria serve davvero nel 2025?</div>
+            <h1 class="gpu-hero-title">Perché Linux?</h1>
+            <div class="gpu-hero-subtitle">Libertà, Privacy e Prestazioni.</div>
         </div>
     </section>
 
     <section class="content-section">
         <div class="intro-text">
-            <h2>Il "Banco di Lavoro"</h2>
-            <p>La RAM è lo spazio dove il computer tiene aperti i programmi in uso. Se è troppo poca, il PC deve usare l'<a href="../storage/tipi.html" style="color: var(--accent-purple);">Archiviazione</a> come memoria di emergenza, rallentando tutto drasticamente.</p>
+            <h2>I Vantaggi dell'Open Source</h2>
+            <p>Usare Linux significa riprendere il controllo del proprio computer. Nessun dato inviato a terzi, nessun aggiornamento forzato, nessuna spesa.</p>
         </div>
 
         <div class="grid-container">
-            <div class="grid-card">
-                <div class="card-header"><h3>8 GB</h3><span>Minimo Essenziale</span></div>
-                <img src="../img/ram/office.jpg" alt="Office Icon">
-                <p>Sufficiente per navigazione web base (poche schede), pacchetto Office e streaming video. Non adatto per il gaming moderno o per tenere molte app aperte insieme.</p>
-            </div>
-
             <div class="grid-card recommended">
-                <div class="card-header"><h3>16 GB</h3><span>Standard Ideale</span></div>
-                <img src="../img/ram/gaming.jpg" alt="Gaming Icon">
-                <p>Il punto d'equilibrio perfetto ("Sweet Spot"). Permette di giocare fluidamente alla maggior parte dei titoli, fare editing leggero e navigare senza pensieri.</p>
+                <div class="card-header"><h3>Gratis & Libero</h3><span>Open Source</span></div>
+                <img src="../img/os/opensource.jpg" alt="Open Source Icon">
+                <p>Il codice è pubblico. Chiunque può ispezionarlo per assicurarsi che non ci siano backdoor. È completamente gratuito da scaricare e installare su quanti PC vuoi.</p>
             </div>
 
             <div class="grid-card">
-                <div class="card-header"><h3>32+ GB</h3><span>Pro & Creator</span></div>
-                <img src="../img/ram/pro.jpg" alt="Workstation Icon">
-                <p>Necessario per editing video 4K, modellazione 3D, macchine virtuali o simulatori di volo complessi. Per un uso normale è spesso capacità inutilizzata.</p>
+                <div class="card-header"><h3>Custom</h3><span>Desktop Environment</span></div>
+                <img src="../img/os/customization.jpg" alt="Custom Desktop">
+                <p>Non ti piace la barra delle applicazioni in basso? Spostala. Vuoi che sembri un Mac? Puoi farlo. Su Linux, l'interfaccia è solo un programma che puoi cambiare a piacimento.</p>
+            </div>
+
+            <div class="grid-card">
+                <div class="card-header"><h3>Efficienza</h3><span>Leggerezza</span></div>
+                <img src="../img/os/terminal.jpg" alt="Performance Icon">
+                <p>Linux consuma pochissime risorse. Può far rinascere vecchi computer che con Windows sarebbero lenti. Gestisce la <a href="../ram/tipi.html" style="color: var(--accent-purple);">RAM</a> e la CPU in modo estremamente efficiente.</p>
             </div>
         </div>
+    </section>
 
-        <div class="wide-box">
-            <div class="wide-text">
-                <h2>Dual Channel: 1+1 fa 3</h2>
-                <p>Non conta solo la quantità totale, ma come la installi. Usare due banchi di RAM identici (es. 2x8GB) invece di uno solo (1x16GB) raddoppia la larghezza di banda verso la <a href="../cpu/tipi.html" style="color: var(--accent-purple);">CPU</a>.</p>
-                <p>È come aprire una seconda corsia in autostrada: le prestazioni, specialmente nei giochi, possono aumentare fino al 20%.</p>
-            </div>
-            <div class="wide-img"><img src="../img/ram/dualchannel.jpg" alt="Dual Channel Illustration"></div>
+    <section class="related-section">
+        <h3>Componenti Correlati</h3>
+        <div class="related-grid">
+            <a href="../ram/tipi.html" class="related-item"><i class="fas fa-memory"></i> RAM</a>
         </div>
     </section>
 
