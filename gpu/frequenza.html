@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-
     <header>
         <a href="../index.html" class="logo">TechNest</a> 
         <nav class="nav-menu">
@@ -36,28 +35,31 @@
                 </div>
             </div>
         </nav>
-           
-    </header>
+        </header>
 
     <nav class="secondary-nav">
-        <a href="tipi.html" class="secondary-nav-item">Tipi</a>
-        <a href="architettura.html" class="secondary-nav-item">Architettura</a>
-        <a href="frequenza.html" class="secondary-nav-item active">Frequenza</a>
-        <a href="memoria.html" class="secondary-nav-item">Memoria</a>
-        <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+        <div class="nav-category">SCHEDA GRAFICA</div>
+        <div class="nav-links-container">
+            <a href="tipi.html" class="secondary-nav-item">Tipi</a>
+            <a href="architettura.html" class="secondary-nav-item">Architettura</a>
+            <a href="frequenza.html" class="secondary-nav-item active">Frequenza</a>
+            <a href="memoria.html" class="secondary-nav-item">Memoria</a>
+            <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+        </div>
     </nav>
 
-    <section class="gpu-hero" style="background-image: url('../img/gpu/GPU.jpg');">
+    <section class="gpu-hero" style="background-image: url('../img/gpu/hero.jpg');">
         <div class="gpu-hero-content">
             <h1 class="gpu-hero-title">Frequenza (Clock)</h1>
-            <div class="gpu-hero-subtitle">MHz, GHz e Boost Clock. Quanto velocemente "batte" il cuore della tua scheda grafica?</div>
+            <div class="gpu-hero-subtitle">MHz, GHz e Boost Clock. Il battito cardiaco della GPU.</div>
         </div>
     </section>
 
     <section class="content-section">
         <div class="intro-text">
-            <h2>La Velocità di Elaborazione</h2>
-            <p>La frequenza di clock indica quanti cicli di calcolo la GPU può eseguire al secondo. È un equilibrio delicato: più alta è la frequenza, maggiori sono le prestazioni, ma aumentano drasticamente i consumi e il calore da smaltire tramite il <a href="../cooling/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Dissipatore</a>.</p>
+            <h2>Velocità e Prestazioni</h2>
+            <p>La frequenza di clock indica quanti milioni di cicli di calcolo il chip grafico esegue ogni secondo. A parità di architettura (es. due RTX 4070), una frequenza più alta si traduce direttamente in più FPS (fotogrammi al secondo) nei giochi.</p>
+            <p>Tuttavia, aumentare la velocità ha un costo fisico: consumi energetici più alti e, soprattutto, molto più calore da dissipare.</p>
         </div>
 
         <div class="cards-container grid-2-cols">
@@ -65,27 +67,38 @@
             <div class="info-card">
                 <img src="../img/gpu/baseclock.jpg" alt="Base Clock Speed">
                 <h3>Base Clock</h3>
-                <p>È la frequenza minima garantita dal produttore durante carichi di lavoro intensi (come il rendering). La scheda non scenderà mai sotto questo valore a meno che non ci siano problemi termici gravi. È la "velocità di crociera" assicurata in ogni condizione.</p>
+                <p>È la frequenza minima garantita dal produttore. La scheda non scenderà mai sotto questo valore durante l'uso normale, anche se il PC è in un ambiente caldo o sotto stress massimo (es. rendering 3D prolungato). Rappresenta la "zona di sicurezza" del chip.</p>
             </div>
 
             <div class="info-card">
                 <img src="../img/gpu/boostclock.jpg" alt="Boost Clock Speed">
                 <h3>Boost Clock</h3>
-                <p>È la frequenza target che la GPU cerca di raggiungere automaticamente quando le condizioni lo permettono (bassa temperatura e potenza dall'<a href="../psu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Alimentatore</a> sufficiente). Nei giochi moderni, la scheda oscillerà costantemente attorno a questo valore per massimizzare gli FPS.</p>
+                <p>La modalità "Turbo" dinamica. La GPU monitora costantemente temperatura e consumo energetico: se ha margine (es. è sotto i 70°C), aumenta automaticamente la frequenza per massimizzare le prestazioni. È qui che la scheda lavora il 99% del tempo mentre giochi.</p>
             </div>
 
             <div class="info-card">
                 <img src="../img/gpu/overclock.jpg" alt="Overclocking Concept">
-                <h3>Overclocking</h3>
-                <p>La pratica di aumentare manualmente le frequenze di Core e Memoria tramite software dedicati. Permette di ottenere un 5-10% di prestazioni extra gratuitamente, ma richiede un ottimo raffreddamento e può causare instabilità (crash) se spinto oltre i limiti fisici del chip.</p>
+                <h3>Overclocking (OC)</h3>
+                <p>La pratica di spingere manualmente le frequenze oltre i limiti di fabbrica usando software come MSI Afterburner. Si può ottenere un guadagno del 5-10% di prestazioni "gratis", ma richiede un ottimo raffreddamento e si rischia l'instabilità del sistema (crash o schermate blu).</p>
             </div>
 
             <div class="info-card">
                 <img src="../img/gpu/thermal.jpg" alt="Thermal Throttling Warning">
                 <h3>Thermal Throttling</h3>
-                <p>Il meccanismo di autodifesa del chip. Se la temperatura tocca livelli critici (solitamente sopra i 90°C), la GPU taglia drasticamente le frequenze per raffreddarsi. Questo causa improvvisi cali di prestazioni (lag) ed è sintomo di un cattivo airflow nel <a href="../case/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Case</a>.</p>
+                <p>Il meccanismo di autodifesa. Se la GPU tocca una temperatura critica (solitamente 90°C+), taglia drasticamente le frequenze per evitare danni fisici. Questo causa un crollo improvviso degli FPS (lag). È il segnale che hai bisogno di un <a href="../case/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Case</a> con migliore airflow.</p>
             </div>
 
+        </div>
+
+        <div class="wide-box">
+            <div class="wide-text">
+                <h2>L'arte dell'Undervolting</h2>
+                <p>Spesso le GPU escono di fabbrica con un voltaggio superiore al necessario per garantire stabilità su tutti i chip. L'<strong>Undervolting</strong> è una tecnica avanzata che consiste nel ridurre manualmente il voltaggio mantenendo la stessa frequenza.</p>
+                <p>Il risultato? La scheda consuma meno, scalda meno e, paradossalmente, spesso va più veloce perché riesce a mantenere il Boost Clock più a lungo senza andare in Throttling.</p>
+            </div>
+            <div class="wide-img">
+                <img src="../img/gpu/undervolt.jpg" alt="Undervolting Curve">
+            </div>
         </div>
     </section>
 

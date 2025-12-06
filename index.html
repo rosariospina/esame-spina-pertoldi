@@ -12,6 +12,7 @@
 
     <header>
         <a href="index.html" class="logo">TechNest</a> 
+        
         <nav class="nav-menu">
             <div class="dropdown">
                 <button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button>
@@ -36,7 +37,6 @@
                 </div>
             </div>
         </nav>
-        
     </header>
 
     <section id="home" class="hero">
@@ -118,33 +118,33 @@
                 
                 <div class="carousel-slide">
                     <div class="feature-image">
-                        <img src="img/index/windows.jpg" alt="Windows 11">
+                        <img src="img/index/windows.png" alt="Windows 11">
                     </div>
                     <div class="feature-text">
                         <h3>Windows</h3>
-                        <p>Windows è lo standard per il gaming e l'ufficio, noto per la sua ampia compatibilità e l'interfaccia intuitiva.</p>
+                        <p>Windows è lo standard per il gaming e l'ufficio, <br>noto per la sua ampia compatibilità e l'interfaccia intuitiva.</p>
                         <a href="os/windows.html" class="btn-purple">DIMMI DI PIÙ</a>
                     </div>
                 </div>
 
                 <div class="carousel-slide">
                     <div class="feature-image">
-                        <img src="img/index/macos.jpg" alt="macOS Monterey">
+                        <img src="img/index/macos.png" alt="macOS Monterey">
                     </div>
                     <div class="feature-text">
                         <h3>macOS</h3>
-                        <p>Il sistema operativo esclusivo dei computer Mac. Famoso per il design elegante e la stabilità.</p>
+                        <p>Il sistema operativo esclusivo dei computer Mac.<br> Famoso per il design elegante e la stabilità.</p>
                         <a href="os/macos.html" class="btn-purple">DIMMI DI PIÙ</a>
                     </div>
                 </div>
 
                 <div class="carousel-slide">
                     <div class="feature-image">
-                        <img src="img/index/linux.jpg" alt="Linux Penguin">
+                        <img src="img/index/linux.png" alt="Linux Penguin">
                     </div>
                     <div class="feature-text">
                         <h3>Linux</h3>
-                        <p>Open source, sicuro e flessibile. È il sistema preferito dagli sviluppatori.</p>
+                        <p>Open source, sicuro e flessibile.<br> È il sistema preferito dagli sviluppatori.</p>
                         <a href="os/linux.html" class="btn-purple">DIMMI DI PIÙ</a>
                     </div>
                 </div>
@@ -185,23 +185,26 @@
     </footer>
 
     <script>
-        /* NAVBAR CLICK (Senza ScrollSpy) */
+        /* DROPDOWN CLICK */
         const dropbtns = document.querySelectorAll('.dropbtn');
         dropbtns.forEach(btn => {
             btn.addEventListener('click', function(e) {
                 e.stopPropagation();
                 const dropdownContent = this.nextElementSibling;
+                // Chiudi gli altri menu
                 document.querySelectorAll('.dropdown-content').forEach(content => {
                     if (content !== dropdownContent) content.classList.remove('show');
                 });
                 document.querySelectorAll('.dropbtn').forEach(b => {
                     if (b !== this) b.classList.remove('active');
                 });
+                // Toggle corrente
                 dropdownContent.classList.toggle('show');
                 this.classList.toggle('active');
             });
         });
 
+        // Chiudi se clicco fuori
         window.addEventListener('click', function() {
             document.querySelectorAll('.dropdown-content').forEach(content => {
                 content.classList.remove('show');
@@ -211,31 +214,38 @@
             });
         });
 
-        /* CAROSELLO */
+        /* CAROUSEL LOGIC */
         const track = document.querySelector('.carousel-track');
-        const slides = Array.from(track.children);
-        const nextButton = document.querySelector('.carousel-btn.next');
-        const prevButton = document.querySelector('.carousel-btn.prev');
-        const dots = Array.from(document.querySelectorAll('.dot'));
-        let currentSlideIndex = 0;
+        if (track) {
+            const slides = Array.from(track.children);
+            const nextButton = document.querySelector('.carousel-btn.next');
+            const prevButton = document.querySelector('.carousel-btn.prev');
+            const dots = Array.from(document.querySelectorAll('.dot'));
+            let currentSlideIndex = 0;
 
-        function updateSlidePosition() {
-            const slideWidth = slides[0].getBoundingClientRect().width;
-            track.style.transform = 'translateX(-' + (slideWidth * currentSlideIndex) + 'px)';
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[currentSlideIndex].classList.add('active');
+            function updateSlidePosition() {
+                const slideWidth = slides[0].getBoundingClientRect().width;
+                track.style.transform = 'translateX(-' + (slideWidth * currentSlideIndex) + 'px)';
+                dots.forEach(dot => dot.classList.remove('active'));
+                if(dots[currentSlideIndex]) dots[currentSlideIndex].classList.add('active');
+            }
+
+            if(nextButton) {
+                nextButton.addEventListener('click', () => {
+                    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+                    updateSlidePosition();
+                });
+            }
+            if(prevButton) {
+                prevButton.addEventListener('click', () => {
+                    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+                    updateSlidePosition();
+                });
+            }
+            window.addEventListener('resize', updateSlidePosition);
+            // Inizializza al caricamento
+            updateSlidePosition();
         }
-
-        nextButton.addEventListener('click', () => {
-            currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-            updateSlidePosition();
-        });
-        prevButton.addEventListener('click', () => {
-            currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
-            updateSlidePosition();
-        });
-        window.addEventListener('resize', updateSlidePosition);
-        function currentSlide(n) { currentSlideIndex = n; updateSlidePosition(); }
     </script>
 
 </body>

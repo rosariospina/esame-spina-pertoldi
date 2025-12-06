@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNest - Tipi di RAM</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -35,63 +36,72 @@
                 </div>
             </div>
         </nav>
-           
     </header>
 
     <nav class="secondary-nav">
-        <a href="tipi.html" class="secondary-nav-item active">Tipi</a>
-        <a href="capacita.html" class="secondary-nav-item">Capacità</a>
-        <a href="frequenza.html" class="secondary-nav-item">Frequenza</a>
-        <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+        <div class="nav-category">MEMORIA RAM</div>
+        <div class="nav-links-container">
+            <a href="tipi.html" class="secondary-nav-item active">Tipi</a>
+            <a href="capacita.html" class="secondary-nav-item">Capacità</a>
+            <a href="frequenza.html" class="secondary-nav-item">Frequenza</a>
+            <a href="modelli.html" class="secondary-nav-item">Modelli</a>
+        </div>
     </nav>
 
     <section class="gpu-hero" style="background-image: url('../img/ram/hero.jpg');">
         <div class="gpu-hero-content">
-            <h1 class="gpu-hero-title">Tipi di RAM</h1>
-            <div class="gpu-hero-subtitle">DDR4 vs DDR5 e memorie speciali. L'evoluzione della velocità.</div>
+            <h1 class="gpu-hero-title">MEMORIA RAM</h1>
+            <div class="gpu-hero-subtitle">Il "Banco di Lavoro" del tuo PC.</div>
         </div>
     </section>
 
     <section class="content-section">
         <div class="intro-text">
-            <h2>Standard Tecnologici</h2>
-            <p>La RAM non è universale: ogni generazione ha una "chiave" fisica diversa e non è retrocompatibile. La scelta dipende esclusivamente da cosa supporta la tua <a href="../cpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">CPU</a> e la tua <a href="../motherboard/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Scheda Madre</a>.</p>
+            <h2>Il "Banco di Lavoro" del PC</h2>
+            <p>La Memoria RAM (Random Access Memory) è un componente essenziale che funge da memoria a breve termine del computer. Più grande è il banco di lavoro (RAM), più applicazioni puoi tenere aperte contemporaneamente senza rallentamenti.</p>
         </div>
 
         <div class="types-grid">
             
             <div class="type-row integrated">
-                <div class="type-image"><img src="../img/ram/ddr.jpg" alt="DDR RAM"></div>
+                <div class="type-image">
+                    <img src="../img/ram/ddr.jpg" alt="DDR RAM">
+                </div>
                 <div class="type-info">
-                    <h3>DDR SDRAM (Desktop & Laptop)</h3>
-                    <p>Double Data Rate. È lo standard de facto. Attualmente siamo in una fase di transizione tra la quarta e la quinta generazione.</p>
+                    <h3>DDR SDRAM</h3>
+                    <p>Double Data Rate. È lo standard per i computer consumer (desktop e laptop). Ogni nuova generazione migliora velocità ed efficienza.</p>
                     <ul class="type-list">
-                        <li><strong>DDR4:</strong> Ancora validissima per budget build. Frequenze tipiche tra 3200-3600 MHz.</li>
-                        <li><strong>DDR5:</strong> Il nuovo standard. Porta la gestione energetica (PMIC) direttamente sul banco, frequenze oltre i 7000 MHz e correzione errori (ECC) on-die integrata.</li>
+                        <li><strong>DDR5:</strong> La generazione più recente. Aumento significativo della velocità e dell'efficienza energetica.</li>
+                        <li><strong>DDR4:</strong> È stato lo standard per anni. Offre ancora ottime prestazioni per gaming e ufficio a costi inferiori.</li>
+                        <li><strong>DDR3:</strong> Una generazione precedente, ormai obsoleta per i nuovi PC ma presente in vecchi sistemi.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="type-row dedicated">
-                <div class="type-image"><img src="../img/ram/lpddr.jpg" alt="LPDDR Chip"></div>
+                <div class="type-image">
+                    <img src="../img/ram/lpddr.jpg" alt="LPDDR Memory">
+                </div>
                 <div class="type-info">
-                    <h3>LPDDR (Low Power)</h3>
-                    <p>Variante a basso voltaggio per dispositivi mobili, tablet e ultrabook moderni (come i MacBook o i laptop Intel Evo). Sacrifica la modularità per l'efficienza.</p>
+                    <h3>LPDDR (Basso Consumo)</h3>
+                    <p>Low Power DDR. Una variante progettata per dispositivi mobili, tablet e laptop ultrasottili dove lo spazio e la batteria sono cruciali.</p>
                     <ul class="type-list">
-                        <li><strong>Saldatura:</strong> I chip sono saldati sulla scheda madre per ridurre le distanze e il consumo. <strong>Non aggiornabile</strong>.</li>
-                        <li><strong>Efficienza:</strong> In standby consuma una frazione rispetto alla DDR standard.</li>
+                        <li><strong>Saldata:</strong> Spesso viene saldata direttamente sulla <a href="../motherboard/tipi.html" style="color: var(--accent-purple);">Scheda Madre</a> per risparmiare spazio.</li>
+                        <li><strong>Non Aggiornabile:</strong> A differenza delle DDR standard, non puoi aggiungerne altra in un secondo momento.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="type-row integrated">
-                <div class="type-image"><img src="../img/ram/hbm.jpg" alt="HBM Stack"></div>
+                <div class="type-image">
+                    <img src="../img/ram/hbm.jpg" alt="HBM Memory">
+                </div>
                 <div class="type-info">
-                    <h3>HBM (High Bandwidth Memory)</h3>
-                    <p>Una tecnologia esotica dove i chip di memoria sono impilati verticalmente (3D Stacking) e posizionati vicinissimi al processore su un "interposer" di silicio.</p>
+                    <h3>HBM (High Bandwidth)</h3>
+                    <p>Memoria ad Alta Larghezza di Banda. Utilizza chip impilati verticalmente (3D) per offrire velocità di trasferimento dati mostruose in poco spazio.</p>
                     <ul class="type-list">
-                        <li><strong>Velocità Folle:</strong> Bus ultra-largo (1024-bit o più) che permette un passaggio dati massiccio.</li>
-                        <li><strong>Uso:</strong> Esclusivo di <a href="../gpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">GPU</a> professionali/AI e Server. Troppo costosa per i PC domestici.</li>
+                        <li><strong>Uso:</strong> Si trova quasi esclusivamente nelle <a href="../gpu/tipi.html" style="color: var(--accent-purple);">GPU</a> di fascia alta e nei server AI.</li>
+                        <li><strong>Costo:</strong> Molto più costosa da produrre rispetto alle memorie DDR tradizionali.</li>
                     </ul>
                 </div>
             </div>
@@ -99,13 +109,54 @@
         </div>
     </section>
 
+    <section class="related-section">
+        <h3>Componenti Correlati</h3>
+        <div class="related-grid">
+            <a href="../motherboard/tipi.html" class="related-item"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+            <a href="../cpu/tipi.html" class="related-item"><i class="fas fa-microchip"></i> CPU</a>
+        </div>
+    </section>
+
     <footer class="site-footer">
         <div class="footer-container">
-            <div class="footer-col branding"><a href="../index.html" class="footer-logo">TechNest</a><p class="copyright">Copyright © 2025</p><p class="institution">Accademia di Belle Arti<br>di Catania</p></div>
-            <div class="footer-col"><h4>Contatti</h4><div class="contact-person"><strong>Alessio Pertoldi</strong><a href="mailto:alessiopertoldi@abacatania.it">alessiopertoldi@abacatania.it</a></div></div>
-            <div class="footer-col"><h4>&nbsp;</h4><div class="contact-person"><strong>Rosario Spina</strong><a href="mailto:rosariomariacristianspina@abacatania.it">rosariomariacristianspina@abacatania.it</a></div></div>
+            <div class="footer-col branding">
+                <a href="../index.html" class="footer-logo">TechNest</a>
+                <p class="copyright">Copyright © 2025</p>
+                <p class="institution">Accademia di Belle Arti<br>di Catania</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contatti</h4>
+                <div class="contact-person">
+                    <strong>Alessio Pertoldi</strong>
+                    <a href="mailto:alessiopertoldi@abacatania.it">alessiopertoldi@abacatania.it</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>&nbsp;</h4>
+                <div class="contact-person">
+                    <strong>Rosario Spina</strong>
+                    <a href="mailto:rosariomariacristianspina@abacatania.it">rosariomariacristianspina@abacatania.it</a>
+                </div>
+            </div>
         </div>
     </footer>
-    <script>const dropbtns=document.querySelectorAll('.dropbtn');dropbtns.forEach(btn=>{btn.addEventListener('click',function(e){e.stopPropagation();const dropdownContent=this.nextElementSibling;document.querySelectorAll('.dropdown-content').forEach(content=>{if(content!==dropdownContent)content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(b=>{if(b!==this)b.classList.remove('active');});dropdownContent.classList.toggle('show');this.classList.toggle('active');});});window.addEventListener('click',function(){document.querySelectorAll('.dropdown-content').forEach(content=>{content.classList.remove('show');});document.querySelectorAll('.dropbtn').forEach(btn=>{btn.classList.remove('active');});});</script>
+
+    <script>
+        const dropbtns = document.querySelectorAll('.dropbtn');
+        dropbtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const dropdownContent = this.nextElementSibling;
+                document.querySelectorAll('.dropdown-content').forEach(content => { if (content !== dropdownContent) content.classList.remove('show'); });
+                document.querySelectorAll('.dropbtn').forEach(b => { if (b !== this) b.classList.remove('active'); });
+                dropdownContent.classList.toggle('show');
+                this.classList.toggle('active');
+            });
+        });
+        window.addEventListener('click', function() {
+            document.querySelectorAll('.dropdown-content').forEach(content => { content.classList.remove('show'); });
+            document.querySelectorAll('.dropbtn').forEach(btn => { btn.classList.remove('active'); });
+        });
+    </script>
 </body>
 </html>

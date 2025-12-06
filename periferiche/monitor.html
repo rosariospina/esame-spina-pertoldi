@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>TechNest - Memoria VRAM</title>
+    <title>TechNest - Monitor</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
@@ -11,55 +11,54 @@
     <header>
         <a href="../index.html" class="logo">TechNest</a> 
         <nav class="nav-menu">
-            <div class="dropdown"><button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button><div class="dropdown-content"><a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a><a href="tipi.html"><i class="fas fa-gamepad"></i> GPU</a><a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a><a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a><a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a><a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a><a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a><a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a><a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a></div></div>
+            <div class="dropdown"><button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button><div class="dropdown-content"><a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a><a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a><a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a><a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a><a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a><a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a><a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a><a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a><a href="tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a></div></div>
             <div class="dropdown"><button class="dropbtn">Software <i class="fas fa-caret-down"></i></button><div class="dropdown-content"><a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a><a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a><a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a></div></div>
         </nav>
     </header>
 
     <nav class="secondary-nav">
-        <div class="nav-category">SCHEDA GRAFICA</div>
-        <div class="nav-links-container">
-            <a href="tipi.html" class="secondary-nav-item">Tipi</a>
-            <a href="architettura.html" class="secondary-nav-item">Architettura</a>
-            <a href="frequenza.html" class="secondary-nav-item">Frequenza</a>
-            <a href="memoria.html" class="secondary-nav-item active">Memoria</a>
-            <a href="modelli.html" class="secondary-nav-item">Modelli</a>
-        </div>
+        <a href="tipi.html" class="secondary-nav-item">Panoramica</a>
+        <a href="tastiere.html" class="secondary-nav-item">Tastiere</a>
+        <a href="mouse.html" class="secondary-nav-item">Mouse</a>
+        <a href="monitor.html" class="secondary-nav-item active">Monitor</a>
     </nav>
 
-    <section class="gpu-hero" style="background-image: url('../img/gpu/hero.jpg');">
+    <section class="gpu-hero" style="background-image: url('../img/periferiche/monitor.jpg');">
         <div class="gpu-hero-content">
-            <h1 class="gpu-hero-title">Memoria VRAM</h1>
-            <div class="gpu-hero-subtitle">GDDR6, Bandwidth e Bus. Perché 8GB non bastano più?</div>
+            <h1 class="gpu-hero-title">Monitor</h1>
+            <div class="gpu-hero-subtitle">La finestra sul tuo mondo digitale.</div>
         </div>
     </section>
 
     <section class="content-section">
         <div class="intro-text">
-            <h2>Video RAM (VRAM)</h2>
-            <p>La VRAM è saldata sulla scheda ed è ottimizzata per spostare texture enormi ad altissima velocità.</p>
+            <h2>Tecnologie del Pannello</h2>
+            <p>La qualità dell'immagine dipende dal tipo di pannello LCD o OLED utilizzato. Ognuno ha i suoi pro e contro.</p>
         </div>
 
         <div class="types-grid">
             <div class="type-row integrated">
-                <div class="type-image"><img src="../img/gpu/vram.jpg" alt="VRAM Memory"></div>
+                <div class="type-image"><img src="../img/periferiche/panel.jpg" alt="IPS Panel"></div>
                 <div class="type-info">
-                    <h3>Capacità (GB)</h3>
-                    <p>Indica "quanta" roba puoi caricare contemporaneamente (texture, modelli). Se riempi tutta la VRAM, il gioco inizierà a scattare.</p>
-                    <ul class="type-list">
-                        <li><strong>1080p:</strong> 8GB (Minimo)</li>
-                        <li><strong>1440p:</strong> 12GB (Consigliato)</li>
-                        <li><strong>4K:</strong> 16GB+ (Necessario)</li>
-                    </ul>
+                    <h3>IPS (In-Plane Switching)</h3>
+                    <p>Lo standard d'oro per i colori. Offre angoli di visione perfetti e una riproduzione cromatica fedele. Ottimo per creativi e gaming non competitivo estremo.</p>
                 </div>
             </div>
 
             <div class="type-row dedicated">
+                <div class="type-image"><img src="../img/periferiche/monitor.jpg" alt="OLED Panel"></div>
                 <div class="type-info">
-                    <h3>Velocità e Bus</h3>
-                    <p>Non conta solo quanti GB hai, ma quanto velocemente puoi spostarli. Il <strong>Bus</strong> (es. 128-bit, 256-bit) è la larghezza della strada per i dati.</p>
+                    <h3>OLED</h3>
+                    <p>Ogni pixel emette la sua luce. Questo significa neri assoluti (il pixel si spegne) e contrasto infinito. È il top per film e giochi immersivi, ma costa molto.</p>
                 </div>
-                <div class="type-image"><img src="../img/gpu/bandwidth.jpg" alt="Memory Bandwidth"></div>
+            </div>
+
+            <div class="type-row integrated">
+                <div class="type-image"><img src="../img/periferiche/monitor.jpg" alt="TN Panel"></div>
+                <div class="type-info">
+                    <h3>TN (Twisted Nematic)</h3>
+                    <p>Tecnologia più vecchia, con colori sbiaditi e angoli di visione scarsi. Viene usata solo negli e-sports estremi perché è la più veloce in assoluto.</p>
+                </div>
             </div>
         </div>
     </section>
