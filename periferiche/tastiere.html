@@ -11,19 +11,39 @@
     <header>
         <a href="../index.html" class="logo">TechNest</a> 
         <nav class="nav-menu">
-            <div class="dropdown"><button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button><div class="dropdown-content"><a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a><a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a><a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a><a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a><a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a><a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a><a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a><a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a><a href="tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a></div></div>
-            <div class="dropdown"><button class="dropbtn">Software <i class="fas fa-caret-down"></i></button><div class="dropdown-content"><a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a><a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a><a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a></div></div>
+                <button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a>
+                    <a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a> 
+                    <a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a>
+                    <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+                    <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
+                    <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
+                    <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
+                    <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
+                    <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Software <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a>
+                    <a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <nav class="secondary-nav">
+        <div class="nav-category">Periferiche</div>
         <a href="tipi.html" class="secondary-nav-item">Panoramica</a>
         <a href="tastiere.html" class="secondary-nav-item active">Tastiere</a>
         <a href="mouse.html" class="secondary-nav-item">Mouse</a>
         <a href="monitor.html" class="secondary-nav-item">Monitor</a>
     </nav>
 
-    <section class="gpu-hero" style="background-image: url('../img/periferiche/keyboard.jpg');">
+    <section class="gpu-hero" style="background-image: url('../img/periferiche/hero.jpg');">
         <div class="gpu-hero-content">
             <h1 class="gpu-hero-title">Tastiere</h1>
             <div class="gpu-hero-subtitle">Il feedback tattile che fa la differenza.</div>
@@ -31,24 +51,60 @@
     </section>
 
     <section class="content-section">
+
         <div class="intro-text">
             <h2>Meccanica o Membrana?</h2>
             <p>La tecnologia sotto i tasti cambia radicalmente l'esperienza di scrittura e di gioco.</p>
         </div>
 
-        <div class="split-container">
-            <div class="split-side left">
-                <img src="../img/periferiche/switch.jpg" alt="Mechanical Switches">
-                <h2>Meccanica</h2>
-                <p>Ogni tasto ha uno switch fisico indipendente. Offre precisione, durata estrema e un feedback sonoro/tattile soddisfacente. È la scelta preferita da gamer e programmatori.</p>
+        <div class="types-grid">
+            
+            <div class="type-row integrated">
+                <div class="type-image"><img src="../img/periferiche/membrana.jpg" alt="Hard Disk Drive"></div>
+                <div class="type-info">
+                    <h3>Tastiere a Membrana</h3>
+                    <p>Utilizzano un sistema a tre strati di membrana. Quando un tasto viene premuto, spinge un pad in gomma (o cupola) verso il basso, che chiude un circuito elettrico sullo strato inferiore.</p>
+                    <ul class="type-list">
+                        <li><strong>Feedback:</strong> Offrono una sensazione "gommosa" (mushy) o morbida, in quanto la cupola di gomma è la parte che fornisce la resistenza.</li>
+                        <li><strong>Rumore:</strong> Sono generalmente le tastiere più silenziose e sono molto resistenti allo sporco e ai liquidi.</li>
+                        <li><strong>Ideale per:</strong> Uffici, ambienti sensibili al rumore e utenti attenti al budget.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="split-side right">
-                <img src="../img/periferiche/keyboard.jpg" alt="Membrane Keyboard">
-                <h2>Membrana</h2>
-                <p>Usa uno strato di gomma sotto i tasti. È più economica, sottile e silenziosa, ma spesso risulta "spugnosa" alla pressione e meno precisa nel gaming veloce.</p>
+
+            <div class="type-row dedicated">
+
+                <div class="type-info">
+                    <h3>Tastiere Meccaniche</h3>
+                    <p>Sotto ogni tasto c'è un interruttore (switch) fisico composti da un alloggiamento, una molla e uno stelo, che registra l'input quando viene premuto.</p>
+                    <ul class="type-list">
+                        <li><strong>Feedback:</strong> Offrono un'esperienza superiore grazie al feedback tattile (si sente il "click" o una resistenza) o lineare (movimento fluido).</li>
+                        <li><strong>Durata:</strong> Sono estremamente durevoli, spesso valutate per 50-100 milioni di battute per tasto.</li>
+                        <li><strong>Personalizzazione:</strong> Sono altamente personalizzabili in termini di sensazione (switch di diverso colore) e keycaps (copritasti).</li>
+                        <li><strong>Ideale per:</strong> Gaming (per la precisione e la velocità di risposta) e chi scrive molto (riduzione degli errori tipografici).</li>
+                    </ul>
+                </div>
+                <div class="type-image"><img src="../img/periferiche/meccanica.jpg" alt="SATA SSD"></div>
+            </div>
+
+            <div class="type-row integrated">
+                <div class="type-image"><img src="../img/periferiche/opto.jpg" alt="NVMe SSD"></div>
+                <div class="type-info">
+                    <h3>Opto-Meccaniche</h3>
+                    <p>Simili alle tastiere meccaniche per struttura, ma utilizzano un raggio di luce a infrarossi per registrare l'input, anziché un contatto metallico. Quando il tasto scende, interrompe il raggio.</p>
+                    <ul class="type-list">
+                        <li><strong>Velocità:</strong> Usando un raggio di luce, eliminano il ritardo (debounce) e registrano l'azione nel momento esatto dell'interruzione luminosa.</li>
+                        <li><strong>Durata:</strong> Poiché non c'è contatto fisico per registrare l'input, i componenti sono meno soggetti a usura.</li>
+                        <li><strong>Ideale per:</strong> Gaming competitivo e eSports dove la velocità di attuazione e la durata sono essenziali.</li>
+                    </ul>
+                </div>
             </div>
         </div>
+       
+
     </section>
+
+
 
     <footer class="site-footer">
         <div class="footer-container">

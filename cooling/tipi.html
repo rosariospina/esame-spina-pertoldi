@@ -21,7 +21,7 @@
                     <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
                     <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
                     <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
-                    <a href="tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
+                    <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
                     <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
                 </div>
             </div>
@@ -37,6 +37,7 @@
     </header>
 
     <nav class="secondary-nav">
+        <div class="nav-category">Dissipazione</div>
         <a href="tipi.html" class="secondary-nav-item active">Tipi</a>
         <a href="socket.html" class="secondary-nav-item">Installazione</a>
         <a href="modelli.html" class="secondary-nav-item">Ventole</a>
@@ -55,31 +56,60 @@
             <p>La <a href="../cpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">CPU</a> produce molto calore. Se non viene dissipato, le prestazioni crollano per evitare danni (Thermal Throttling).</p>
         </div>
 
-        <div class="types-grid">
+       <div class="types-grid">
             <div class="type-row integrated">
-                <div class="type-image"><img src="../img/cooling/air.jpg" alt="Air Cooler"></div>
+                <div class="type-image"><img src="../img/cooling/air.jpg" alt="VRAM Memory"></div>
                 <div class="type-info">
-                    <h3>Dissipatore ad Aria</h3>
-                    <p>Semplice ed efficace. Usa tubi di calore (heatpipes) in rame per trasportare il calore dalla base a un pacco lamellare in alluminio, raffreddato da una ventola.</p>
+                    <h3>Air Cooling</h3>
+                    <p>È il metodo più comune, affidabile ed economico..</p>
                     <ul class="type-list">
-                        <li><strong>Affidabilità:</strong> Eterna. Non ci sono pompe che possono rompersi.</li>
-                        <li><strong>Costo:</strong> Generalmente più economico a parità di prestazioni.</li>
+                        <li><strong>Funzionamento:</strong> Sfrutta un dissipatore con tubi di calore (heat pipes) che assorbono il calore della <a href="../cpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">CPU</a>. Le ventole soffiano l'aria attraverso le alette del dissipatore, disperdendo il calore nell'ambiente circostante.</li>
+                        <li><strong>Uso Ideale:</strong> PC da ufficio, gaming di fascia media e build economiche/affidabili.</li>
+                        <li><strong>Vantaggi:</strong> Molto affidabile, non ha parti liquide soggette a perdite, facile da installare e generalmente ha una lunga durata.</li>
+                        <li><strong>Svantaggi:</strong> I dissipatori ad alte prestazioni (tower coolers) possono essere molto grandi e ingombranti, limitando lo spazio per la <a href="../ram/tipi.html" style="color: var(--accent-purple); text-decoration: none;">RAM</a> o interferendo con il <a href="../case/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Case</a>.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="type-row dedicated">
-                <div class="type-image"><img src="../img/cooling/aio.jpg" alt="Liquid AIO"></div>
                 <div class="type-info">
-                    <h3>Dissipatore a Liquido (AIO)</h3>
-                    <p>All-In-One. Un circuito chiuso con liquido che sposta il calore a un radiatore esterno. L'acqua ha una capacità termica superiore all'aria, gestendo meglio i picchi improvvisi.</p>
+                    <h3>AIO Liquid Cooling</h3>
+                    <p>È una soluzione a liquido pre-assemblata e sigillata (chiusa), che non richiede manutenzione (All-in-One).</p>
                     <ul class="type-list">
-                        <li><strong>Estetica:</strong> Lascia la zona CPU pulita e visibile.</li>
-                        <li><strong>Performance:</strong> I radiatori grandi (360mm) battono quasi sempre l'aria.</li>
+                        <li><strong>Funzionamento:</strong> Una pompa è montata sulla CPU per assorbire il calore. Il liquido refrigerante viene pompato attraverso dei tubi flessibili fino a un radiatore. Le ventole sono montate sul radiatore per soffiare via il calore dal liquido.</li>
+                        <li><strong>Uso Ideale:</strong> CPU di fascia alta (<a href="../cpu/modelli.html" style="color: var(--accent-purple); text-decoration: none;">Ryzen 7/9, Intel Core i7/i9</a>) e build focalizzate sull'estetica.</li>
+                        <li><strong>Vantaggi:</strong> Estetica più pulita, offre prestazioni di raffreddamento migliori rispetto all'aria nella maggior parte dei casi ed è facile da installare rispetto ai sistemi custom.</li>
+                        <li><strong>Svantaggi:</strong> Costo superiore rispetto all'aria, presenza di una pompa che può guastarsi e rischio minimo (ma esistente) di perdite.</li>
+                    </ul>
+                </div>
+                <div class="type-image"><img src="../img/cooling/aio.jpg" alt="Memory Bandwidth"></div>
+            </div>
+
+            <div class="type-row integrated">
+                <div class="type-image"><img src="../img/cooling/custom.jpg" alt="VRAM Memory"></div>
+                <div class="type-info">
+                    <h3>Custom Liquid Cooling</h3>
+                    <p>È il sistema più efficace, ma anche il più costoso, complesso e ad alto mantenimento.</p>
+                    <ul class="type-list">
+                        <li><strong>Funzionamento:</strong> L'utente progetta l'intero sistema da zero, selezionando componenti separati: pompa, serbatoio, tubi rigidi o flessibili, raccordi e water block (non solo per la <a href="../gpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">CPU</a>, ma anche per la <a href="../gpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">GPU</a>, <a href="../ram/tipi.html" style="color: var(--accent-purple); text-decoration: none;">RAM</a> e <a href="../motherboard/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Scheda Madre</a>).</li>
+                        <li><strong>Uso Ideale:</strong> Overclocking estremo, Workstation e build vetrina/espositive.</li>
+                        <li><strong>Vantaggi:</strong> Massime prestazioni di raffreddamento (per l'overclocking estremo), estetica e personalizzazione incomparabili.</li>
+                        <li><strong>Svantaggi:</strong> Molto costoso, richiede conoscenza tecnica avanzata per l'assemblaggio, manutenzione regolare (cambio del liquido, pulizia) e rischio di perdite.</li>
                     </ul>
                 </div>
             </div>
-        </div>
+
+            <div class="type-row dedicated">
+                <div class="type-info">
+                    <h3>Raffreddamento Estremo</h3>
+                    <p>Queste soluzioni sono utilizzate solo da overclocker professionisti per sessioni di test brevi e non sono adatte all'uso quotidiano.</p>
+                    <ul class="type-list">
+                        <li><strong>Refrigerazione a Cambio di Fase (Phase Change):</strong> Utilizza un compressore (simile a un frigorifero) per raffreddare attivamente un blocco montato sulla <a href="../gpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">CPU</a> fino a temperature sotto lo zero.</li>
+                        <li><strong>Azoto Liquido (LN2) / Ghiaccio Secco:</strong> Usato esclusivamente per stabilire record mondiali di overclocking. L'LN2 può raggiungere i -196°C, ma il sistema produce molta condensa ed è inutilizzabile per un PC comune.</li>
+                    </ul>
+                </div>
+                <div class="type-image"><img src="../img/cooling/extreme.jpg" alt="Memory Bandwidth"></div>
+            </div>
     </section>
 
     <section class="related-section">
@@ -87,6 +117,9 @@
         <div class="related-grid">
             <a href="../cpu/tipi.html" class="related-item"><i class="fas fa-microchip"></i> CPU</a>
             <a href="../case/tipi.html" class="related-item"><i class="fas fa-box"></i> Case</a>
+            <a href="../ram/tipi.html" class="related-item"><i class="fas fa-box"></i> RAM</a>
+            <a href="../gpu/tipi.html" class="related-item"><i class="fas fa-box"></i> GPU</a>
+            <a href="../motherboard/tipi.html" class="related-item"><i class="fas fa-box"></i> Scheda Madre</a>
         </div>
     </section>
 

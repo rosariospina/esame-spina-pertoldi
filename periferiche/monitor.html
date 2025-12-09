@@ -11,19 +11,40 @@
     <header>
         <a href="../index.html" class="logo">TechNest</a> 
         <nav class="nav-menu">
-            <div class="dropdown"><button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button><div class="dropdown-content"><a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a><a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a><a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a><a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a><a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a><a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a><a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a><a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a><a href="tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a></div></div>
-            <div class="dropdown"><button class="dropbtn">Software <i class="fas fa-caret-down"></i></button><div class="dropdown-content"><a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a><a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a><a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a></div></div>
+            <div class="dropdown">
+                <button class="dropbtn">Hardware <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../cpu/tipi.html"><i class="fas fa-microchip"></i> CPU</a>
+                    <a href="../gpu/tipi.html"><i class="fas fa-gamepad"></i> GPU</a> 
+                    <a href="../ram/tipi.html"><i class="fas fa-memory"></i> RAM</a>
+                    <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
+                    <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
+                    <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
+                    <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
+                    <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
+                    <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Software <i class="fas fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="../os/windows.html"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="../os/macos.html"><i class="fab fa-apple"></i> macOS</a>
+                    <a href="../os/linux.html"><i class="fab fa-linux"></i> Linux</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <nav class="secondary-nav">
+        <div class="nav-category">Periferiche</div>
         <a href="tipi.html" class="secondary-nav-item">Panoramica</a>
         <a href="tastiere.html" class="secondary-nav-item">Tastiere</a>
         <a href="mouse.html" class="secondary-nav-item">Mouse</a>
         <a href="monitor.html" class="secondary-nav-item active">Monitor</a>
     </nav>
 
-    <section class="gpu-hero" style="background-image: url('../img/periferiche/monitor.jpg');">
+    <section class="gpu-hero" style="background-image: url('../img/periferiche/hero.jpg');">
         <div class="gpu-hero-content">
             <h1 class="gpu-hero-title">Monitor</h1>
             <div class="gpu-hero-subtitle">La finestra sul tuo mondo digitale.</div>
@@ -36,31 +57,74 @@
             <p>La qualità dell'immagine dipende dal tipo di pannello LCD o OLED utilizzato. Ognuno ha i suoi pro e contro.</p>
         </div>
 
-        <div class="types-grid">
+      <div class="types-grid">
+            
             <div class="type-row integrated">
-                <div class="type-image"><img src="../img/periferiche/panel.jpg" alt="IPS Panel"></div>
+                <div class="type-image"><img src="../img/periferiche/tn.jpg" alt="Hard Disk Drive"></div>
                 <div class="type-info">
-                    <h3>IPS (In-Plane Switching)</h3>
-                    <p>Lo standard d'oro per i colori. Offre angoli di visione perfetti e una riproduzione cromatica fedele. Ottimo per creativi e gaming non competitivo estremo.</p>
+                    <h3>TN (Twisted Nematic)</h3>
+                    <p>Velocità pura a discapito della qualità visiva.</p>
+                    <ul class="type-list">
+                        <li><strong>Dettagli:</strong> La tecnologia TN è la più veloce e la meno costosa. Il modo in cui i cristalli liquidi si allineano permette loro di cambiare stato (e quindi colore) molto rapidamente.</li>
+
+                        <li><strong>Applicazioni:</strong> Domina il mercato degli eSports e del gaming competitivo professionale, dove il tempo di risposta di 1ms o meno è la priorità assoluta per minimizzare il motion blur.</li>
+
+                        <li><strong>Limitazioni:</strong> I colori appaiono sbiaditi e gli angoli di visione sono molto scarsi. Se guardi lo schermo leggermente lateralmente o dall'alto, i colori si invertono o si scuriscono drasticamente.</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="type-row dedicated">
-                <div class="type-image"><img src="../img/periferiche/monitor.jpg" alt="OLED Panel"></div>
+
                 <div class="type-info">
-                    <h3>OLED</h3>
-                    <p>Ogni pixel emette la sua luce. Questo significa neri assoluti (il pixel si spegne) e contrasto infinito. È il top per film e giochi immersivi, ma costa molto.</p>
+                    <h3>IPS (In-Plane Switching)</h3>
+                    <p>Accuratezza cromatica e ampi angoli di visione.</p>
+                    <ul class="type-list">
+                        <li><strong>Dettagli:</strong> Garantiscono che i colori rimangano coerenti e fedeli grazie al movimento parallelo dei cristalli liquidi, indipendentemente dall'angolo di visione.</li>
+
+                        <li><strong>Applicazioni:</strong> È lo standard per i professionisti creativi grazie ai suoi colori accurati. Le versioni Fast IPS sono ora abbastanza veloci anche per il gaming di alto livello.</li>
+
+                        <li><strong>Limitazioni:</strong> Sono suscettibili al fenomeno del IPS Glow (una leggera alone biancastro visibile negli angoli quando lo schermo è nero).</li>
+                    </ul>
                 </div>
+                <div class="type-image"><img src="../img/periferiche/ips.jpg" alt="SATA SSD"></div>
             </div>
 
             <div class="type-row integrated">
-                <div class="type-image"><img src="../img/periferiche/monitor.jpg" alt="TN Panel"></div>
+                <div class="type-image"><img src="../img/periferiche/va.jpg" alt="NVMe SSD"></div>
                 <div class="type-info">
-                    <h3>TN (Twisted Nematic)</h3>
-                    <p>Tecnologia più vecchia, con colori sbiaditi e angoli di visione scarsi. Viene usata solo negli e-sports estremi perché è la più veloce in assoluto.</p>
+                    <h3>VA (Vertical Alignment)</h3>
+                    <p>Contrasto e neri profondi.</p>
+                    <ul class="type-list">
+                        <li><strong>Dettagli:</strong> Utilizzano cristalli allineati verticalmente che bloccano la luce in modo efficace, garantendo un rapporto di contrasto nativo elevato (spesso 3000:1 o superiore).</li>
+
+                        <li><strong>Applicazioni:</strong> Ottimi per guardare film o giocare in ambienti bui, dove i neri profondi sono essenziali per l'immersione. Molti monitor curvi utilizzano pannelli VA.</li>
+
+                        <li><strong>Limitazioni:</strong> Possono soffrire di black smearing o ghosting lento nelle aree scure, dove i pixel faticano a cambiare stato abbastanza velocemente.</li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="type-row dedicated">
+
+                <div class="type-info">
+                    <h3>OLED (Organic Light-Emitting Diode)</h3>
+                    <p>Qualità visiva perfetta e velocità istantanea.</p>
+                    <ul class="type-list">
+                        <li><strong>Dettagli:</strong> Non utilizza retroilluminazione. Ogni singolo pixel è un diodo che emette luce propria e può essere spento completamente.</li>
+
+                        <li><strong>Applicazioni:</strong> Offre neri assoluti (contrasto infinito), colori eccezionali e un tempo di risposta vicino allo zero, rendendolo perfetto sia per il gaming che per l'uso professionale.</li>
+
+                        <li><strong>Limitazioni:</strong> Il costo è molto alto e persiste un rischio (seppur ridotto dalla tecnologia moderna) di ritenzione d'immagine permanente (burn-in) visualizzando elementi statici a lungo.</li>
+                    </ul>
+                </div>
+                <div class="type-image"><img src="../img/periferiche/oled.jpg" alt="SATA SSD"></div>
+            </div>
+
         </div>
+       
+
+
     </section>
 
     <footer class="site-footer">

@@ -20,7 +20,7 @@
                     <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
                     <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
                     <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
-                    <a href="tipi.html"><i class="fas fa-box"></i> Case</a>
+                    <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
                     <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
                     <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
                 </div>
@@ -37,6 +37,7 @@
     </header>
 
     <nav class="secondary-nav">
+        <div class="nav-category">Case</div>
         <a href="tipi.html" class="secondary-nav-item">Tipi</a>
         <a href="airflow.html" class="secondary-nav-item active">Airflow</a>
         <a href="ingressi.html" class="secondary-nav-item">Ingressi</a>
@@ -53,21 +54,26 @@
     <section class="content-section">
         <div class="intro-text">
             <h2>Come muovere l'aria</h2>
-            <p>Un case chiuso senza ventole trasforma il PC in un forno. L'aria calda deve uscire velocemente per permettere al <a href="../cooling/tipi.html" style="color: var(--accent-purple);">Dissipatore</a> di lavorare.</p>
+            <p>Un case chiuso senza ventole trasforma il PC in un forno.</p> 
+            <p>L'aria calda deve uscire velocemente per permettere al <a href="../cooling/tipi.html" style="color: var(--accent-purple);">Dissipatore</a> di lavorare.</p>
         </div>
 
-        <div class="cards-container grid-2-cols">
-            <div class="info-card">
+        <div class="split-container">
+            <div class="split-side left">
                 <img src="../img/case/airflow.jpg" alt="Airflow Diagram">
-                <h3>Flusso Standard</h3>
-                <p>Aria fresca entra dal fronte e dal basso. Aria calda esce dal retro e dall'alto (perché il calore sale naturalmente).</p>
+                <h2>Flusso Standard</h2>
+                <p>Aria fresca entra dal fronte e dal basso.</p> 
+                <p>Aria calda esce dal retro e dall'alto (perché il calore sale naturalmente).</p>
             </div>
-            <div class="info-card">
-                <img src="../img/case/airflow.jpg" alt="Positive Pressure"> 
-                <h3>Pressione Positiva</h3>
-                <p>Più ventole in immissione che in estrazione. Questo forza l'aria a uscire dalle fessure, impedendo alla polvere di entrare.</p>
+
+            <div class="split-side right">
+                <img src="../img/case/pressure.jpg" alt="Positive Pressure"> 
+                <h2>Pressione Positiva</h2>
+                <p>Più ventole in immissione che in estrazione.</p> 
+                <p>Questo forza l'aria a uscire dalle fessure, impedendo alla polvere di entrare.</p>
             </div>
         </div>
+
     </section>
 
     <footer class="site-footer">
