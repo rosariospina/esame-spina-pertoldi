@@ -20,7 +20,7 @@
                     <a href="../motherboard/tipi.html"><i class="fas fa-chess-board"></i> Scheda Madre</a>
                     <a href="../storage/tipi.html"><i class="fas fa-hdd"></i> Archiviazione</a>
                     <a href="../psu/tipi.html"><i class="fas fa-plug"></i> Alimentatore</a>
-                    <a href="tipi.html"><i class="fas fa-box"></i> Case</a>
+                    <a href="../case/tipi.html"><i class="fas fa-box"></i> Case</a>
                     <a href="../cooling/tipi.html"><i class="fas fa-fan"></i> Dissipazione</a>
                     <a href="../periferiche/tipi.html"><i class="fas fa-keyboard"></i> Periferiche</a>
                 </div>
@@ -37,6 +37,7 @@
     </header>
 
     <nav class="secondary-nav">
+        <div class="nav-category">Case</div>
         <a href="tipi.html" class="secondary-nav-item active">Tipi</a>
         <a href="airflow.html" class="secondary-nav-item">Airflow</a>
         <a href="ingressi.html" class="secondary-nav-item">Ingressi</a>
@@ -53,28 +54,90 @@
     <section class="content-section">
         <div class="intro-text">
             <h2>Spazio e Compatibilità</h2>
-            <p>La scelta del case non è solo estetica: detta le dimensioni della <a href="../motherboard/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Scheda Madre</a> e la lunghezza massima della GPU che potrai montare.</p>
+            <p>La scelta del case non è solo estetica: detta le dimensioni della <a href="../motherboard/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Scheda Madre</a> e la lunghezza massima della <a href="../gpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">GPU</a> che potrai montare.</p>
         </div>
 
-        <div class="split-container">
-            <div class="split-side left">
-                <img src="../img/case/tower.jpg" alt="Mid Tower Case">
-                <h2>Mid-Tower (ATX)</h2>
-                <p>Lo standard del settore. Offre spazio sufficiente per schede madri ATX, grandi dissipatori e schede video lunghe. È il più facile da assemblare grazie all'ampio spazio per la gestione dei cavi.</p>
+        <div class="types-grid">
+            <div class="type-row integrated">
+                <div class="type-image"><img src="../img/case/full_tower.jpg" alt="VRAM Memory"></div>
+                <div class="type-info">
+                    <h3>Full Tower (Torre Completa)</h3>
+                    <p>Sono i case più grandi e voluminosi.</p>
+                    <ul class="type-list">
+                        <li><strong>Espansione Estrema:</strong> Offrono lo spazio massimo per unità di <a href="../storage/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Archiviazione (HDD/SSD)</a>, schede di espansione e componenti multipli.</li>
+                        <li><strong>Schede Madri Supportate:</strong> E-ATX, ATX.</li>
+                        <li><strong>Raffreddamento:</strong> Garantisce il miglior flusso d'aria (airflow) possibile e consente l'installazione di sistemi di <a href="../cooling/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Raffreddamento a liquido</a> personalizzati.</li>
+                        <li><strong>Uso Ideale:</strong> Workstation estreme, PC da overclocking e assemblaggi con configurazioni Multi-GPU.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="split-side right">
-                <img src="../img/case/itx.jpg" alt="Mini ITX Case">
-                <h2>SFF (Small Form Factor)</h2>
-                <p>Per chi ama il minimalismo estremo. Richiede componenti specifici (schede ITX, alimentatori SFX) e molta pazienza nell'assemblaggio, ma il risultato è un PC potente grande quanto una console.</p>
+
+            <div class="type-row dedicated">
+                <div class="type-info">
+                    <h3>Mid Tower (Torre Media)</h3>
+                    <p>È la categoria più popolare e comune nel mercato di consumo, offrendo un buon equilibrio tra dimensioni e funzionalità.</p>
+                    <ul class="type-list">
+                        <li><strong>Espansione Estrema:</strong> Permettono gestire cavi senza difficoltà e installare schede grafiche di fascia alta.</li>
+                        <li><strong>Schede Madri Supportate:</strong> ATX, Micro-ATX.</li>
+                        <li><strong>Raffreddamento:</strong> Offrono spazio sufficiente per montare robusti sistemi di <a href="../cooling/tipi.html" style="color: var(--accent-purple); text-decoration: none;">Raffreddamento a liquido All-in-One (AIO)</a> da 240 mm o 360 mm.</li>
+                        <li><strong>Uso Ideale:</strong> La maggior parte dei PC da Gaming di fascia media e alta.</li>
+                    </ul>
+                </div>
+                <div class="type-image"><img src="../img/case/mid_tower.jpg" alt="Memory Bandwidth"></div>
             </div>
+
+            <div class="type-row integrated">
+                <div class="type-image"><img src="../img/case/mini.jpg" alt="VRAM Memory"></div>
+                <div class="type-info">
+                    <h3>Mini Tower</h3>
+                    <p>Sono più piccoli e compatti dei Mid Tower, focalizzati sull'efficienza dello spazio.</p>
+                    <ul class="type-list">
+                        <li><strong>Schede Madri Supportate:</strong> Micro-ATX (mATX) e Mini-ITX (mITX).</li>
+                        <li><strong>Uso Ideale:</strong> PC da ufficio, PC da salotto (HTPC) e gaming di fascia media/economica.</li>
+                        <li><strong>Svantaggi:</strong> Lo spazio limitato rende difficile l'installazione di schede grafiche molto lunghe e voluminose. La gestione dei cavi e il flusso d'aria richiedono più attenzione.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="type-row dedicated">
+                <div class="type-info">
+                    <h3>Small Form Factor (SFF)</h3>
+                    <p>Estremamente compatti, spesso cubici o simili a console.</p>
+                    <ul class="type-list">
+                        <li><strong>Schede Madri Supportate:</strong> Esclusivamente Mini-ITX (mITX).</li>
+                        <li><strong>Uso Ideale:</strong> Assemblaggi portatili, Mini-PC ad alte prestazioni e utenti che cercano la massima miniaturizzazione.</li>
+                        <li><strong>Vantaggi Principali:</strong> Ottimi per il trasporto e per chi desidera un ingombro minimo assoluto.</li>
+                        <li><strong>Svantaggi:</strong> Difficili da assemblare e il raffreddamento è la sfida maggiore, limitando l'uso di <a href="../cpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">CPU</a> e <a href="../gpu/tipi.html" style="color: var(--accent-purple); text-decoration: none;">GPU</a> ad altissime prestazioni che generano molto calore.</li>
+                    </ul>
+                </div>
+                <div class="type-image"><img src="../img/case/ssf.jpg" alt="Memory Bandwidth"></div>
+            </div>
+
+            <div class="type-row integrated">
+                <div class="type-image"><img src="../img/case/custom.jpg" alt="VRAM Memory"></div>
+                <div class="type-info">
+                    <h3>Case Custom</h3>
+                    <p>Questa categoria si distingue per la modifica o la costruzione da zero, andando oltre gli standard di produzione di massa.</p>
+                    <ul class="type-list">
+                        <li><strong>Modding:</strong> Parte da un case esistente e lo modifica pesantemente (taglio, verniciatura, integrazione di raffreddamento personalizzato) per migliorarne l'estetica o la funzionalità.</li>
+                        <li><strong>Scratch Build:</strong> Il telaio viene creato da zero (es. in alluminio, legno o integrato in una scrivania), risultando in un pezzo unico dove l'arte e il design sono prioritari.</li>
+                        <li><strong>Vantaggi Principali:</strong> Sono scelti per l'unicità, l'estetica e la possibilità di implementare soluzioni di raffreddamento estreme e altamente specializzate.</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
+
     </section>
 
     <section class="related-section">
         <h3>Componenti Correlati</h3>
         <div class="related-grid">
             <a href="../motherboard/tipi.html" class="related-item"><i class="fas fa-chess-board"></i> Scheda Madre</a>
-            <a href="../psu/tipi.html" class="related-item"><i class="fas fa-plug"></i> Alimentatore</a>
+            <a href="../gpu/tipi.html" class="related-item"><i class="fas fa-plug"></i> GPU</a>
+            <a href="../cpu/" class="related-item"><i class="fas fa-plug"></i> CPU</a>
+            <a href="../cooling/tipi.html" class="related-item"><i class="fas fa-plug"></i> Dissipazione</a>
+            <a href="../storage/tipi.html" class="related-item"><i class="fas fa-plug"></i> Archiviazione</a>
         </div>
     </section>
 
