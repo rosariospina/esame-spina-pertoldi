@@ -546,7 +546,12 @@ a.icon-box:hover i, a.icon-box:hover span { color: #fff; }
 
 
 
-.wide-box { background: linear-gradient(45deg, #111, #1a1a1a); border: 1px solid #444; border-radius: 20px; padding: 40px; display: flex; align-items: center; max-width: 1200px; gap: 40px; margin: 50px auto auto auto; }
+.wide-box {
+     background: linear-gradient(45deg, #111, #1a1a1a);
+      border: 1px solid #444; border-radius: 20px; padding: 40px;
+       display: flex; align-items: center; max-width: 1200px; gap: 40px;
+        margin: 50px auto auto auto; 
+    }
 .wide-text { flex: 1; } .wide-text h2 { font-size: 2rem; margin-bottom: 15px; color: #fff; } .wide-text p { color: #ccc; line-height: 1.7; margin-bottom: 15px; }
 .wide-img { flex: 1; display: flex; justify-content: center; } .wide-img img { max-width: 100%; max-height: 300px; object-fit: contain;}
 
