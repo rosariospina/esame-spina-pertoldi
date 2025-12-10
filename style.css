@@ -308,7 +308,7 @@ header {
 /* Carosello */
 .os-section {
     background: #000;
-    background-image: url('../img/index/background_os.jpg');
+    background-image: url('img/index/background_os.jpg');
     background-size: cover;
     background-position: center;
     padding: 60px 0; /* Padding verticale ridotto */
